@@ -1,0 +1,39 @@
+/* <<<  IE4+  NS6+ FORM FIELD CONTROLS >>> */
+/* Cool scrollbar and font  - Windows IE 5+  specific */
+SELECT, OPTION  {
+ font-family :  arial, Helvetica, sans-serif;
+ font-size : 10px;
+ background-color : #FCFCFC; 
+}
+
+TEXTAREA {
+ font-family : verdana, arial, Helvetica, sans-serif;
+ font-size : 10px;
+ background-color : #FCFCFC; 
+ border: 1px solid #666666;
+}
+
+UL {
+	margin-top : 8px;
+	margin-left : 25px;
+}
+
+LI {
+	list-style-position : outside;
+	list-style-type : square;
+	list-style-image :  url(http://www.petermaharaj.com/test/files/btn_listitem.gif);
+	line-height : 13px;
+}
+
+/* Form Field control */
+.frmfield {
+	font-family :  arial, Helvetica, sans-serif;  
+	font-size : 10px;
+	background-color : #FCFCFC; 
+  	border: 1px solid #666666;
+}
+
+/* Submit button */
+.submitter {
+	 border: 3px outset #BBBBBB;
+}

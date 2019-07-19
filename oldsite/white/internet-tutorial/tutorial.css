@@ -1,0 +1,173 @@
+/* Style sheet for Internet Tutorial */
+/* Developed by Monica White */
+
+* { 
+	margin: 0;
+	padding: 0; 
+	}
+	
+body {
+	color: #333;
+	background-color: #fff;
+	text-align: center;
+	font-family: verdana, arial, helvetica, sans-serif;
+	}
+	
+#page {
+	margin: 3% auto;
+	width: 75%;
+	font-size: 85%;
+	line-height: 1.5em;
+	text-align: left;
+	}
+	
+#page a { 
+	color: #303d98;
+	background-color: #fff;
+	text-decoration: underline; 
+	}
+	
+#page a:hover { 
+	background-color: #303d98;
+	color: #fff;
+	text-decoration: none; 
+	}
+	
+#center {
+	margin-left: 15%;
+	margin-right: 15%;
+	}
+	
+#nav_arrows {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+	clear: both;
+	color: #fff;
+	background-color: #fff;
+	}
+	
+#nav_arrows a, #nav_arrows a:hover {
+	color: #fff;
+	background-color: #fff;
+	text-decoration: none;
+	}
+	
+#nav_arrows img.next, #nav_arrows img.previous {
+	height: 39px; 
+	width: 71px; 
+	border: 0px;
+	}	
+	
+#navbar {
+	text-align: center;
+	font-size: .7em;
+	color: #fff;
+	background-color: transparent;
+	}
+	
+#navbar img {
+	height: 29px;
+	width: 576px;
+	border: 0px;
+	}
+	
+#navbar a:link, #navbar a:hover, #navbar a:visited {
+	color: #fff;
+	background-color: transparent;
+	text-decoration: none;
+	}
+	
+#breadcrumbs {
+	font-size: .75em;
+	text-align: left;
+	margin-bottom: 1em;
+	}
+	
+h1 {
+	color: #303d98;
+	background-color: #fff;
+	font-size: 1.75em;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: .75em;
+	line-height: 1.5em;
+	}
+	
+h2 {
+	color: #303d98;
+	background-color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 1.2em;
+	margin-bottom: .5em;
+	}
+	
+p, ul {
+	margin-bottom: 7px;
+	}
+	
+ul {
+	list-style: none;
+	}
+	
+ul li {
+	background: url(images/li_bull.gif) no-repeat 0 50%;
+	padding-left: 20px;
+	}
+
+ul.square {
+	list-style-type: square;
+	margin-left: 2em; 
+	line-height: 1.75em
+	}
+	
+p, ul {
+	text-align: left;
+	}
+		
+p.disclaimer {
+	font-size: .75em;
+	text-align: left;
+	line-height: 1.4em;
+	}
+	
+p.center {
+	margin: 1em auto;
+	margin-bottom: 2em;
+	width: 78%;
+	font-size: .7em;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.4em;
+	}
+	
+p.blue {
+	margin: 1em auto;
+	margin-bottom: 1em;
+	text-align: center;
+	font-weight: bold;
+	color: #303d98;
+	background-color: #fff;
+	font-size: 1em;
+	}
+	
+#validation {
+	text-align: center;
+	color: #fff;
+	background-color: #fff;
+	}
+
+#validation img {
+	border: 0;
+	}
+	
+#validation a, #validation a:hover {
+	color: #fff;
+	background-color: #fff;
+	text-decoration: none;
+	}
+		
+/* End of style sheet */
+	

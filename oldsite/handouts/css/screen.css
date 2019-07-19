@@ -1,0 +1,393 @@
+/************* Style sheet for orientations ************/
+/************* Styles for screen ***********************/
+/************* file name is http://lib.lbcc.edu/handouts/css/screen.css ************/
+	
+			
+		html, body   { 
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			}
+			
+		body  { 
+			color: #333;
+			background-color: #697172; 
+			font-family: "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, arial, helvetica, sans-serif;
+			text-align: center;
+			}
+			/*			 
+			background: url("../images/page-bg.gif");  }
+			*/
+			
+		#container  {
+			color: #333; 
+			background-color: #fff;
+			border: 1px solid #afafaf;
+			border-color: #afafaf #5a5a5a #5a5a5a #afafaf; 
+			margin: 5% auto;
+			width: 92%;
+			-moz-border-radius: 10px; 
+			}
+			
+		#header {
+			margin: 0;
+			padding: 20px;
+			height: 90px;
+			}
+			
+		#breadcrumbs {
+			text-align: left;
+			font-size: .75em;
+			margin-top: 10px;
+			margin-left: 20px;
+			}
+			
+		#skiplinks {
+			text-align: right;
+			font-size: .75em;
+			margin-top: 10px;
+			margin-right: 20px;
+			}
+			
+		
+			
+			
+/***************** styles for horizontal navigation bar across top *************************/
+			
+		#navigation {
+			clear: both;
+			}
+			
+		#navigation ul {
+			list-style: none;
+			padding: 0;
+			padding-top: 4px;
+			}
+			
+		#navigation li {
+			display: inline;
+			margin: 0px;
+			font-size: .8em;
+			}
+			
+		#navigation a:link, #navigation a:visited {
+			margin-right: 2px;
+			padding: 3px 8px 2px 8px;
+			color: #820204;
+			background-color: #ededed;
+			text-decoration: none;
+			border-top: 1px solid #fff;
+			border-right: 1px solid #717171;
+			border-bottom: 1px solid #717171;
+			border-left: 1px solid #fff;						
+			}
+			
+		#navigation a:hover {
+			border-top: 1px solid #717171;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			border-left: 1px solid #717171;
+			}
+			
+		#main-text {
+			text-align: left;
+			line-height: 1.2em;
+			font-size: .8em;
+			padding: 0px 20px;
+			}
+			
+		table.grid {
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-collapse: collapse;
+	}
+	
+table.grid th, table.grid td {
+	padding: 5px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	}
+	
+table.grid th {
+	color: #333;
+	background: #ccc;
+	}
+	
+table.grid td {
+	vertical-align: top;
+	line-height: 1.2em;
+	font-size: .8em;
+	}
+	
+table.grid tr.odd {
+	color: #000;
+	background-color: #eeeeef;
+	}
+	
+caption {
+	font-family: verdana, sans-serif;
+	color: #333;
+	background-color: #fff;
+	padding-bottom: 6px;
+	font-weight: bold;
+	font-size: 1em;
+	}
+	
+#validation {
+	border-top: 1px dashed silver;
+	padding: 1em;
+	}
+
+#validation img {
+	border: 0;
+	}
+			
+#validation a:link, 
+#validation a:visited, 
+#validation a:hover, 
+#validation a:active {
+	text-decoration: none;
+	border: 0;
+	}
+	
+#icon img {
+	border: 0;
+	}
+			
+#icon a:link, 
+#icon a:visited, 
+#icon a:hover, 
+#icon a:active {
+	text-decoration: none;
+	border: 0;
+	background-color: #fff;
+	}
+			
+		#footer {
+			text-align: center;
+			margin-top: 2em;
+			font-size: .8em;
+			line-height: 1.2em;						
+			}
+			
+		#footer2 {
+			clear: both;
+			margin: 0;
+			font-size: .75em;
+			padding: 10px;
+			background-color: #ccc;
+			color: #626262;
+			text-align: center;
+			}
+			
+		img.logo {
+			float: left;
+			width: 215px; 
+			height: 78px; 
+			border: 0px; 
+			}
+			
+		img.home {		
+			width: 39px;
+			height: 33px;
+			border: 1px solid #fff;
+			float: left;
+			}
+	
+		img.noborder {
+			width: 39px;
+			height: 33px;
+			border: 1px solid #fff;;
+			}
+			
+		img.wai {
+			width: 88px; 
+			height: 31px; 
+			border: 0px;
+			}
+			
+		h1 {
+			text-align: right;
+			margin-top: 1em;
+			font-size: 1.4em;
+			line-height: 1.2em;
+			color: #666;
+			background-color: #fff;
+			font-family: "Trebuchet MS", "lucida grande", verdana, arial, sans-serif;
+			font-weight: bold;
+			}									
+			
+		h2 {
+			color: #333;
+			background-color: #fff;
+			font-family: "Trebuchet MS", "lucida grande", verdana, arial, sans-serif;
+			font-weight: bold;
+			text-align: left;
+			font-size: 115%;
+			letter-spacing: 3px;
+			margin-bottom: .8em;
+			margin-top: 25px;
+			}
+						
+		h3 {
+			color: #333;
+			background-color: #fff;
+			font-weight: bold;
+			text-align: left;
+			font-size: 105%;
+			margin: 15px 0 10px 2em;
+			}
+			
+		h4 {
+			color: #333;
+			background-color: #fff;
+			font-weight: bold;
+			font-size: 100%;
+			margin-left: 4em;
+			margin-bottom: 5px;
+			}
+			
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			margin-bottom: 1em;
+			}
+			
+		ul li {
+			margin-left: 4em;
+			margin-bottom: 5px;
+			font-size: .9em;
+			}
+			
+		ul.disc {
+			list-style-type: disc;
+			}
+			
+		ul.square {
+			list-style-type: square;
+			}
+			
+			
+/****************** styles for links ************************************/
+						
+		a:link, a:visited {
+			color: #820204;
+			background-color: #fff;			
+			text-decoration: none;			
+			border-bottom: 1px dotted #820204;
+			font-weight: normal;
+			}
+
+		a:hover {
+			color: #333;
+			background-color: #fff;
+			text-decoration: none;
+			border-bottom: 1px dotted #333;
+			font-weight: normal;
+			}
+			
+		p {
+			text-align: left;
+			margin-bottom: 10px;
+			}
+			
+		.indent {
+			margin-left: 2em;
+			}
+			
+		.indent2 {
+			margin-left: 4em;
+			}
+			
+			
+		.center {
+			text-align: center;
+			}
+			
+		.small-font {
+			font-size: .75em;
+			text-align: left;
+			margin: 20px 0;
+			padding: 0px 20px;
+			}
+			
+		p.hang {
+			text-indent: -4em;
+			margin-left: 8em;
+			}
+			
+		.red {
+			color: #820204;
+			background-color: #fff;
+			}
+			
+		.clear {
+			clear: both;
+			}
+			
+		.highlight {
+			color: #333;
+			background-color: #ffc;
+			}
+			
+		p.border {
+			color: #333;
+			background-color: #efefef;
+			margin: 0 4em 0 4em;
+			padding: 10px;
+			border: 1px solid silver;
+			font-weight: bold;
+			}
+			
+		abbr, acronym, dfn {
+			font-style: normal;
+			border-bottom: 1px dotted gray;
+			}
+			
+		abbr {
+			speak: spell-out;
+			}
+			
+		acronym {
+			speak: normal;
+			}
+			
+		#validation {
+			text-align: center;
+			color: #fff;
+			background-color: #fff;
+			margin-bottom: 1em;
+			}
+			
+			
+/************************** styles for validation *****************************/
+
+		#validation img {
+			border: 0;
+			}
+			
+		#validation a:link, 
+		#validation a:visited, 
+		#validation a:hover, 
+		#validation a:active 
+			{
+			text-decoration: none;
+			border: 1px dotted #fff;
+			}
+			
+		table.examples {
+			margin: 0 10% 2em 4em;
+			border: 0;
+			border-spacing: 4px 20px;
+			font-size: .9em;
+			line-height: 1em;
+			}
+			
+		table.examples td {
+			padding: 3px 20px 3px 0px;
+			}
+			
+			
+/* End of screen style sheet */
+							

@@ -1,0 +1,31 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="SERVER">
+
+Sub Application_OnStart
+Application("customer_count") = 0
+Application("counted") = 0
+Application("started") = Now()
+End Sub
+
+Sub Application_OnEnd
+Application("ended") = Now()
+End Sub
+
+Sub Session_OnStart
+session.Timeout = 30
+session("start") = Now()
+Application.Lock
+Application("customer_count") = Application("customer_count") + 1
+Application("productcats") = ""
+Application("countries") = ""
+Application("counted") = Application("counted") + 1
+Application("specials") = ""
+Application.UnLock
+End Sub
+
+Sub Session_OnEnd
+Application.Lock
+if Application("customer_count") > 0 then Application("customer_count") = Application("customer_count") - 1
+Application.UnLock
+End Sub
+
+</script>

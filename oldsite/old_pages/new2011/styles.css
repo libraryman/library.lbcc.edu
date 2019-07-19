@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+#artbox {
+    /* height: 181px; */
+    /* Fix IE 6 height issue */
+    /* _height: 168px; */
+    z-index: 0;
+    }
+
+  #artbox div {
+    display: none;
+  }
+
+  /* Fix IE 7 height issue */
+  #bannerLogo > #artbox {
+   	*height:180px;
+    }
+
+  #artboxnav {
+    position: relative;
+    margin-left: 8px;
+    /* bottom: 15px; */
+    /* Fix IE 6 navigation positioning issue */
+    _bottom: 5px;
+    height: 0px;
+    width: 100px;
+	margin-top: 4px;
+    }
+
+  #artboxnav a {
+    margin: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* font-size: 7px; */
+    font-size: 9px;
+    font-family: sans-serif;
+	line-height: 1.5em;
+    color: #999;
+    text-decoration: none;
+    background-color: #333;
+    opacity: 0.15;
+    /* Set IE 8 opacity */
+    -ms-filter: "alpha(opacity=100)";
+    /* Set IE 7 and earliet opacity */
+    filter: alpha(opacity=100);
+    zoom: 1;
+    }
+
+  #artboxnav a:hover {
+    color: #fff;
+    background: #888;
+    opacity: 1;
+    /* Set IE 8 opacity */
+    -ms-filter: "alpha(opacity=100)";
+    /* Set IE 7 and earliet opacity */
+    filter: alpha(opacity=100);
+    zoom: 1;
+    }
+
+  #artboxnav a.activeSlide {
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    opacity: 1;
+    /* Set IE 8 opacity */
+    -ms-filter: "alpha(opacity=100)";
+    /* Set IE 7 and earliet opacity */
+    filter: alpha(opacity=100);
+    zoom: 1;
+    }

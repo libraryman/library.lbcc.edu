@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<dragAndDrop>
+
+	<setup title="Inventors Matchup">
+		<prefs dynamicStage="1" playSounds="1" clipFloat="1" onDropVanish="1" targetsChange="1" nextShow="0"></prefs>
+		<stage LtoR="1" dStartX="30" dStartY="50" dIncrement="10" tStartX="175" tStartY="50" tIncrement="9"></stage>
+		<float floatDist="30"></float>		
+		<error>Drag the clip over one of the target boxes.</error>
+		<feedback></feedback>
+		<complete>&lt;br&gt;&lt;b&gt;Congratulations! You have completed this XHTML Matchup exercise.&lt;/b&gt;</complete>
+		<next URL="" target="" setX="158" setY="100"></next>		
+	</setup>
+
+	<targetClips>
+		<clip title="" graphic="">
+			<startText>Invented the traffic light.</startText>
+			<successText>Garrett A. Morgan: Invented the traffic light.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented carbon filament for the light bulb.</startText>
+			<successText>Lewis H. Latimer: Invented carbon filament for the light bulb.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented the ironing board.</startText>
+			<successText>Sarah Boone: Invented the ironing board.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented the railway signal.</startText>
+			<successText>Albert B. Blackburn: Invented the railway signal.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented a lubricating process for locomotive engines.</startText>
+			<successText>Elijah McCoy: Invented a lubricating process for locomotive engines.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented the laserphaco probe.</startText>
+			<successText>Patricia Bath: Invented the laserphaco probe.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented the shoe lasting marchine.</startText>
+			<successText>Jan Ernst Matzeliger: Invented the shoe lasting marchine.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented the street sweeper.</startText>
+			<successText>Charles B. Brooks: Invented the street sweeper.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented the telephone transmitter.</startText>
+			<successText>Granville T. Woods: Invented the telephone transmitter.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented new, enhanced guitar strings.</startText>
+			<successText>Robert Flemmings, Jr.: Invented new, enhanced guitar strings.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Invented the golf tee.</startText>
+			<successText>George F. Grant: Invented the golf tee.</successText>
+		</clip>
+		
+		
+	</targetClips>
+	
+	<dragClips>
+		
+		<clip title="Patricia Bath" graphic="" target="tc5">
+			<feedback id="default">No, Patricia Bath was the first African American woman doctor to receive a patent for a medical invention.</feedback>
+			<feedback id="correct">Correct! Patricia Bath invented the laserphaco probe.</feedback>
+		</clip>
+		
+		<clip title="Robert Flemmings,Jr." graphic="" target="tc9">
+			<feedback id="default">No, Robert Flemmings, Jr. invented something pertaining to a musical instrument.</feedback>
+			<feedback id="correct">Correct! Robert Flemmings, Jr. invented new, enhanced guitar strings.</feedback>
+		</clip>
+		
+		<clip title="Charles B. Brooks" graphic="" target="tc7">
+			<feedback id="default">No, Charles B. Brooks invented a device to save human labor.</feedback>
+			<feedback id="correct">Correct! Charles B. Brooks invented the street sweeper.</feedback>
+		</clip>
+		
+		<clip title="Garrett A. Morgan" graphic="" target="tc0">
+			<feedback id="default">No, Garrett A. Morgan invented a device to ensure human safety.</feedback>
+			<feedback id="correct">Correct. Garrett A. Morgan invented the traffic light.</feedback>
+		</clip>
+		
+		<clip title="Albert B. Blackburn" graphic="" target="tc3">
+			<feedback id="default">No, Albert B. Blackburn invented something to ensure the safety of trains.</feedback>
+			<feedback id="correct">Correct! Albert B. Blackburn invented the railway signal.</feedback>
+		</clip>
+		
+		<clip title="George F. Grant" graphic="" target="tc10">
+			<feedback id="default">No, George F. Grant invented an indispensable item used in a popular sport.</feedback>
+			<feedback id="correct">Correct! George F. Grant invented the golf tee.</feedback>
+		</clip>
+		
+		<clip title="Lewis H. Latimer" graphic="" target="tc1">
+			<feedback id="default">No, Lewis H. Latimer made outstanding contributions to the development of electric light.</feedback>
+			<feedback id="correct">Correct. Lewis H. Latimer invented carbon filament for the light bulb.</feedback>
+		</clip>
+		
+		<clip title="Granville T. Woods" graphic="" target="tc8">
+			<feedback id="default">No, Granville T. Woods invented a device used in telegraphony.</feedback>
+			<feedback id="correct">Correct! Granville T. Woods invented the telephone transmitter.</feedback>
+		</clip>
+		
+		<clip title="Elijah McCoy" graphic="" target="tc4">
+			<feedback id="default">No, Elijah McCoy was a pioneer in the automatic lubrication of engines.</feedback>
+			<feedback id="correct">Correct! Elijah McCoy invented a lubricating process for locomotive engines.</feedback>
+		</clip>
+		
+		<clip title="Sarah Boone" graphic="" target="tc2">
+			<feedback id="default">No, Sarah Boone invented a device found in just about every household.</feedback>
+			<feedback id="correct">Correct! Sarah Boone invented the ironing board.</feedback>
+		</clip>
+		
+		<clip title="Jan Ernst Matzeliger" graphic="" target="tc6">
+			<feedback id="default">No, Jan Ernst Matzeliger made a significant contribution to the shoe industry.</feedback>
+			<feedback id="correct">Correct! Jan Ernst Matzeliger invented the shoe lasting marchine.</feedback>
+		</clip>
+		
+	</dragClips>
+
+	
+</dragAndDrop>

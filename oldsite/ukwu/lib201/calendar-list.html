@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="Author" content="Monica White" />
+<meta name="robots" content="nofollow,noindex" />
+<title>Library 1</title>
+
+
+<!-- Here are the links to the external style sheets for various media -->
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+<link rel="stylesheet" type="text/css" media="aural" href="css/aural.css" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<style type="text/css">
+
+	table {
+	border: 1px solid #333;
+	padding: 5px;
+	width: 90%;
+	}
+	
+	thead tr th {
+	color: #fff;
+	background-color: #00514a;
+	}
+	
+	tr {
+	border-bottom: 1px solid silver;
+	}
+	
+	th, td {
+	vertical-align: top;
+	border-spacing: 4px;
+	}
+	
+	td {
+	padding: 3px;
+	}
+	
+	#dataTable01 {
+	width: 606px;
+	}
+
+tr.highlightOffOdd {
+	color: #000;
+	background-color: #ededed;
+	}
+
+tr.highlightOffEven {
+	color: #000;
+	background: #fff;
+	}
+
+tr.highlightOn {
+	color: #000;
+	background: #ffc;
+	border-left: 1px solid transparent 
+	}
+
+</style>
+
+<script language="javascript" type="text/javascript">
+			function highLightRow() {
+				if (document.getElementById) {
+					var tables=document.getElementsByTagName('table');
+						for (var i=0;i<tables.length;i++) {
+						if(tables[i].className=='highlightTable') {
+							var trs=tables[i].getElementsByTagName('tr');
+							for(var j=0;j<trs.length;j++) {
+									
+									if(trs[j].parentNode.nodeName=='TBODY')
+					{
+									if (j % 2 == 1) var highlightClass='highlightOffOdd'; 
+									
+									else var highlightClass = 'highlightOffEven';
+									
+									trs[j].className=highlightClass;
+									
+									trs[j].onmouseover=function(){
+										this.className='highlightOn';
+										return false
+									}
+									if (highlightClass=='highlightOffOdd') {
+										trs[j].onmouseout=function(){
+											this.className='highlightOffOdd';
+											return false
+										}
+									}
+									if (highlightClass=='highlightOffEven') {
+										trs[j].onmouseout=function(){
+											this.className='highlightOffEven';
+											return false
+										}}
+									}
+							}
+						}
+					}
+				}
+			}
+
+
+		</script>
+
+</head>
+
+<body onload="highLightRow()">
+
+
+
+<!-- Here is the main title of the site-->
+
+<div id="main-title">Lib 1: Intro. to Libraries</div>
+
+
+
+<!-- Here is the title of this page  -->
+
+<h1>Calendar</h1>
+
+
+<!-- Here is the main piece of text  -->
+
+<div id="main-text">
+
+	<p>Get a list of College important dates at <a title="Important college dates" href="http://www.lbcc.edu/importantdates.html">http://www.lbcc.edu/importantdates.html</a></p>
+
+
+	
+	<table class="highlightTable" id="dataTable01" summary="This table lists due dates for assignments">
+	<thead>
+		<tr class="odd">				
+			<th id="c1">Mod</th>
+			<th id="c2" style="width: 190px;">Module</th>
+			<th id="c3">Assignment</th>
+			<th id="c4">Date Due</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr id="r1">
+			<th>1</th>
+			<td headers="c2 r1">Introduction to the Internet, Browsers,<br />and Search Engines</td>
+			<td headers="c3 r1">Read Study Guides for Learning Module 1<br />
+									Complete Practices<br /> Post messages on Discussion Forum 1<br>
+									Complete Assignment 1</td>
+			<td headers="c4 r1">7/19/06</td>
+		</tr>
+		<tr id="r2" class="odd">
+			<th>2</th>
+			<td headers="c2 r2">Classification Systems and Library of Congress Subject Headings</td>
+			<td headers="c3 r2">Read Study Guides for Learning Module 2<br />
+								Complete Practices<br />
+						Post messages on Discussion Forum 2<br/>
+						 Complete Assignment 2<br />
+						
+								</td>
+			<td headers="c4 r2">7/21/06</td>
+		</tr>
+		<tr id="r3">
+			<th>3</th>
+			<td headers="c2 r3">Introduction to the Research Process</td>
+			<td headers="c3 r3">Read Study Guides for Learning Module 3<br />
+									Complete Practices<br /> Post messages on Discussion Forum 3<br />
+									Complete Assignment 3<br />
+								</td>
+			<td headers="c4 r3">7/26/06</td>
+		</tr>
+		<tr id="r4" class="odd">
+			<th>4</th>
+			<td headers="c2 r4">Evaluation and Citation of Information. Bibliography</td>
+			<td headers="c3 r4">Read Study Guides for Learning Module 4<br />
+									Complete Practices<br />
+						Post messages on Discussion Forum 4 <br/>
+						Complete Assignment 4<br />
+						
+							</td>
+			<td headers="c4 r4">7/28/06</td>
+		</tr>
+		<tr id="r5">
+			<th>5</th>
+			<td headers="c2 r5">Print Indexes</td>
+			<td headers="c3 r5">Read Study Guides for Learning Module 5<br />
+								Complete Practices<br /> Post messages on Discussion Forum 5<br />
+								Complete Assignment 5</td>
+			<td headers="c4 r5">8/2/06</td>
+		</tr>
+		<tr id="r6" class="odd">
+			<th>6</th>
+			<td headers="c2 r6">Reference Resources</td>
+			<td headers="c3 r6">Read Study Guides for Learning Module 6<br />
+									Complete Practices<br />
+						Post messages on Discussion Forum 6<br/>
+						 Complete Assignment 6</td>
+			<td headers="c4 r6">8/4/06</td>
+		</tr>
+		<tr id="r7">
+			<th>7</th>
+			<td headers="c2 r7">Electronic Databases</td>
+			<td headers="c3 r7">Read Study Guides for Learning Module 7<br />
+									Complete Practices<br /> Post messages on  Discussion Forum 7<br />
+									Complete Assignment 7</td>
+			<td headers="c4 r7">8/9/06</td>
+		</tr>
+		<tr id="r8" class="odd">
+			<th>8</th>
+			<td headers="c2 r8">Introduction to the Internet</td>
+			<td headers="c3 r8">Read Study Guides for Learning Mooudle 8<br />
+									Complete Practices<br />
+						Post messages on Discussion Forum  8<br/>
+						 Complete Assignment 8</td>
+			<td headers="c4 r8">8/11/06</td>
+		</tr>
+		<tr id="r9">
+			<th>9</th>
+			<td headers="c2 r9">Review. Bibliography</td>
+			<td headers="c3 r9">Read Study Guides for Learning Module 9<br />
+									Complete Practices<br /> Post messages on Discussion Forum 9<br />
+									Complete Assignment 9</td>
+			<td headers="c4 r9">8/18/06</td>
+		</tr>
+	</tbody>
+	</table>
+			
+	
+	<p class="highlight">Reminder: All ninne assignments and the bibliography must be submitted on or before August 18, 2006.</p>
+			
+	
+</div>
+
+<div id="url">http://coursepages.lbcc.edu/libmw/lib1olmw</div>
+
+<div id="footer-print">Copyright &copy; 2006, Monica White and Kim Barclay. All Rights Reserved.
+You may make archival copies for your personal use only.</div>
+
+
+<!-- Here is the footer  -->
+
+<div id="footer">
+
+::  <a title="Home" href="index.html">home</a>  :: 
+  <a title="Library homepage" href="http://lib.lbcc.edu">library home</a>  :: 
+  <a title="Email instructor" href="mailto:%20mwhite@lbcc.edu">contact instructor</a>  ::
+
+
+</div>
+
+
+
+
+<!-- Here is the navbar - it's absolutely positioned on the left side  -->
+
+<div id="left-menu">
+	<p><a title="Course Information" href="course-info.html">Course Information&nbsp;&nbsp;</a></p>			
+	<p><a title="Calendar" href="calendar.html" class="current">Calendar&nbsp;&nbsp;</a></p>			
+	<p><a title="Grades" href="grades.html">Grades&nbsp;&nbsp;</a></p>		
+	<p style="border-bottom: 5px #d21300 solid;"><a title="Instructors" href="instructors.html">Instructor's Info&nbsp;&nbsp;</a>			
+	<p style="padding-top: 30px;"><a title="Learning Modules" href="learning.html">Learning Modules&nbsp;&nbsp;</a></p>			
+	<p><a title="Graded Assignments" href="graded.html">Graded Assignments&nbsp;&nbsp;</a></p>		
+	<p><a title="FAQ" href="faq.html">FAQ&nbsp;&nbsp;</a></p>		
+	<p><a title="S.I.D.E.Road" href="http://de.lbcc.edu/sideroad/index.html">S.I.D.E.Road&nbsp;&nbsp;</a></p>	
+	<p style="border-bottom: 5px #d21300 solid;"><a title="Bibliography" href="bibliography.html">Bibliography&nbsp;&nbsp;</a></p>		
+	<p style="padding-top: 30px;"><a title="Discussion Forum" href="http://forums.lbcc.edu/lib1olmw/lib1olmwm1/post.asp">Discussion Forum&nbsp;&nbsp;</a></p>		
+	<p><a title="Student Biographies" href="http://forums.lbcc.edu/lib1olmw/lib1olmwbios/post.asp">Student Bios&nbsp;&nbsp;</a></p>
+	<p><a title="About This Course Website" href="about.html">About&nbsp;&nbsp;</a></p>
+	<p style="border-bottom: 5px #d21300 solid;"><a title="Announcements" href="index.html">Announcements&nbsp;&nbsp;</a></p>
+</div>
+
+<div id="e-zteach">
+			<a title="Email Amit Schitai" href="mailto:%20samits@lbcc.edu">e-zteach©2004</a></div>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{overflow:hidden;margin:0;padding:0}
+body{background-color:#FFF}
+h1{color:#444}
+img{border:0}
+#header{top:1ex}
+#header h1{font-size:14px;font-family:Verdana, Geneva, sans-serif;line-height:85%;margin-left:.5em}
+#header h1,#presence{display:inline;vertical-align:middle}
+span.me{color:#F00;font-family:Verdana, Geneva, sans-serif;}
+span.you{color:#00F;font-family:Verdana, Geneva, sans-serif;}
+#header,#layout,#buttons,#send,#status{position:absolute;left:1ex;right:1ex}
+#layout,#send #msg{border:1px solid #c0c0c0}
+#layout{top:30px;bottom:4.7em;height:expression(document.documentElement.clientHeight - 10*parseInt(document.body.currentStyle.fontSize)+'px')}
+#layout #recv{overflow:auto;height:100%}
+#buttons,#status{font-size:small;font-family:Verdana, Geneva, sans-serif;height:1em;text-align:bottom}
+#buttons{bottom:4.3em}
+#buttons a{text-decoration:none}
+#buttons a span.sprite{background-image:url("https://d1aaqh87bn7fin.cloudfront.net/sprite_2010011801.png");background-repeat:no-repeat;display:inline;float:left;margin-right:4px}
+#file span.sprite{background-position:-45px 0;width:22px;height:14px}
+#mail span.sprite{background-position:-28px 0;width:17px;height:13px}
+#popout span.sprite{background-position:-68px 0;width:9px;height:14px}
+#sounds span.sprite{background-position:0 0;width:10px;height:14px}
+#send{bottom:1em;height:2em}
+#send *{width:100%;height:100%;margin:0}
+#status{bottom:0}
+.status{color:#0A0}

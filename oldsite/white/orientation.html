@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta name="description" content="There’s More to Research Than Google Monica White 75% of college students begin their research with a search engine. Most of them rely on research skills learned in high school. http://lib.lbcc.edu"/>
+    <title></title>
+    <script type="text/javascript" language="javascript">
+//      <![CDATA[
+            var images = new Array (8);
+            images[0] = "orientation_files/orientation.001.png";
+            images[1] = "orientation_files/orientation.002.png";
+            images[2] = "orientation_files/orientation.003.png";
+            images[3] = "orientation_files/orientation.004.png";
+            images[4] = "orientation_files/orientation.005.png";
+            images[5] = "orientation_files/orientation.006.png";
+            images[6] = "orientation_files/orientation.007.png";
+            images[7] = "orientation_files/orientation.008.png";
+            var index = 0;
+            function WindowLoaded(evt)
+            {
+                document.body.onselectstart = function () { return false; };
+            }
+            function Step(i)
+            {
+                GoTo(index + i)
+            }
+            function GoTo(newIndex)
+            {
+                if(newIndex >= 0 && newIndex < images.length)
+                {
+                    index = newIndex;
+                    document.Slideshow.src = images[index];
+                }
+            }
+//      ]]>
+    </script>
+</head>
+<body bgcolor="black" onload='WindowLoaded(event);'>
+    <p align="center">
+        <br/>
+        <br/>
+        <img name="Slideshow" alt="" src="orientation_files/orientation.001.png" onclick="Step(1)"/>
+    </p>
+</body>
+</html>

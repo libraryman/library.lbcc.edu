@@ -1,0 +1,83 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+ xmlns:oa="urn:schemas-microsoft-com:office:activation">
+ <p:presentation sizeof="screen" notessizey="5737" gridspacingx="49152"
+  gridspacingy="49152">
+  <p:master id="6" slidesn="0,0" type="main" href="master06.htm"
+   xmlhref="master06.xml" template="Bold Stripes" layout="title_body"
+   slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#3e798e,#ffffff,#356677,#ffffcc,#7fa0b1,#3a7184,#ffbf0b,#cc9900"/>
+    <p:colorscheme
+     colors="#eaeaea,#000000,#eaeaea,#003366,#ffffff,#dddddd,#336699,#9a0000"/>
+    <p:colorscheme
+     colors="#eaeaea,#000000,#eaeaea,#000000,#ffffff,#dddddd,#777777,#969696"/>
+    <p:colorscheme
+     colors="#d4d5c3,#492417,#b9ba9c,#6e4900,#dbd8cf,#c7c8b0,#cc9900,#808080"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="7" slidesn="0,0" type="main" href="master07.htm"
+   xmlhref="master07.xml" template="Bold Stripes" layout="title_body"
+   slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#3e798e,#ffffff,#356677,#ffffcc,#7fa0b1,#3a7184,#ffbf0b,#cc9900"/>
+    <p:colorscheme
+     colors="#eaeaea,#000000,#eaeaea,#003366,#ffffff,#dddddd,#336699,#9a0000"/>
+    <p:colorscheme
+     colors="#eaeaea,#000000,#eaeaea,#000000,#ffffff,#dddddd,#777777,#969696"/>
+    <p:colorscheme
+     colors="#d4d5c3,#492417,#b9ba9c,#6e4900,#dbd8cf,#c7c8b0,#cc9900,#808080"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="2" slidesn="1C80B7F,232616B0" type="handout" href="master02.htm"
+   layout="handout" slots="header,dateTime,footer,slideNumber"/>
+  <p:slide id="7" slidesn="0,0" href="slide0007.htm"/>
+  <p:slide id="2" slidesn="0,0" href="slide0002.htm"/>
+  <p:slide id="1" slidesn="0,0" href="slide0001.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="3" slidesn="0,0" href="slide0003.htm"/>
+  <p:slide id="4" slidesn="0,0" href="slide0004.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="5" slidesn="0,0" href="slide0005.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="20" slidesn="0,0" href="slide0020.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="21" slidesn="0,0" href="slide0021.htm"/>
+  <p:slide id="22" slidesn="0,0" href="slide0022.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="10" slidesn="0,0" href="slide0010.htm"/>
+  <p:slide id="9" slidesn="0,0" href="slide0009.htm"/>
+  <p:slide id="8" slidesn="0,0" href="slide0008.htm"/>
+  <p:slide id="11" slidesn="0,0" href="slide0011.htm"/>
+  <p:slide id="12" slidesn="0,0" href="slide0012.htm"/>
+  <p:slide id="13" slidesn="0,0" href="slide0013.htm"/>
+  <p:slide id="14" slidesn="0,0" href="slide0014.htm"/>
+  <p:slide id="15" slidesn="0,0" href="slide0015.htm"/>
+  <p:slide id="16" slidesn="0,0" href="slide0016.htm"/>
+  <p:slide id="17" slidesn="0,0" href="slide0017.htm"/>
+  <p:slide id="19" slidesn="0,0" href="slide0019.htm"/>
+  <p:slide id="18" slidesn="0,0" href="slide0018.htm"/>
+  <p:slide id="24" slidesn="0,0" href="slide0024.htm"/>
+  <p:slide id="23" slidesn="0,0" href="slide0023.htm"/>
+  <p:slide id="6" slidesn="0,0" href="slide0006.htm"
+   overridemasteranimations="t"/>
+  <p:viewstate type="slideView" restoredleft="346" restoredtop="863"
+   manualadjustleft="t" manualadjusttop="t" hideoutlineicons="t"/>
+  <p:tag name="___PPT12" type="binary" datasize="9" dataoffset="2"/>
+  <p:font name="Verdana" charset="0" type="4" family="34"/>
+  <p:font name="Arial" charset="0" type="4"/>
+  <p:font name="Wingdings" charset="2" type="4" family="2"/>
+  <p:font name="Calibri" charset="0" type="4" family="34"/>
+  <p:headersfooters nouserdate="t" nofooter="t" noheader="t" nodate="t"
+   todaydate="t"/>
+  <p:headersfooters notes="t" nouserdate="t" nofooter="t" noheader="t"
+   nodate="t" todaydate="t"/>
+  <p:pptdocumentsettings framecolors="WhiteTextOnBlack" hideslideanimation="t"
+   browsersupport="v4"/>
+ </p:presentation>
+ <o:shapedefaults v:ext="edit" spidmax="38984">
+  <o:colormru v:ext="edit" colors="gray,#5f5f5f,silver,#0c0"/>
+ </o:shapedefaults></xml>

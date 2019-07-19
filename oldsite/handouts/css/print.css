@@ -1,0 +1,142 @@
+/************* Style sheet for orientations ************/
+/************* Styles for print ***********************/
+
+			
+		body {
+			margin: 0;
+			font-family: times, serif;
+			color: #000;
+			background-color: #fff;	
+			}
+								
+		#skiplinks, #navigation, #validation, #footer, #footer2 {
+			display: none;
+			}
+						
+		img.logo {
+			float: left;
+			width: 215px; 
+			height: 78px; 
+			border: 0px; 
+			margin-bottom: 2em;
+			}
+			
+		#container {
+			margin: 20px;
+			}
+						
+		#main-text {
+			clear: both;
+			font-size: 11pt;
+			line-height: 15pt;
+			}
+			
+		dfn, abbr, acronym {
+			border-bottom: 0;
+			font-style: normal;
+			}											
+			
+		td.right {
+			text-align: right;
+			}
+			
+		td {
+			font-size: 14px;}
+			
+		h1 {
+			color: #000;
+			background-color: #fff;
+			font-weight: bold;
+			text-align: right;
+			font-size: 21px;
+			font-family: "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, arial, helvetica, sans-serif;
+			margin-bottom: -15px;
+			}
+						
+		h2 {
+			color: #333;
+			background-color: #fff;
+			font-weight: bold;
+			text-align: left;
+			font-size: 14px;
+			margin: 10px 0;
+			font-family: "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, arial, helvetica, sans-serif;
+			}
+			
+		h3 {
+			color: #333;
+			background-color: #fff;
+			font-weight: bold;
+			font-size: 13px;
+			margin-left: 40px;
+			margin-bottom: -15px;
+			font-family: "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, arial, helvetica, sans-serif;
+			}
+			
+			
+		h4 {
+			font-weight: bold;
+			text-align: left;
+			font-size: 12px;
+			margin-bottom: -10px;
+			font-family: "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, arial, helvetica, sans-serif;
+			}
+			
+			
+		ul {
+			list-style-type: none;
+			}
+			
+		ul li {
+			margin-left: 40px;
+			font-size: 14px;
+			}
+			
+		ul.square {
+			list-style-type: square;
+			}
+			
+		a:link, a:visited, a:hover {
+			text-decoration: none;
+			color: #000;
+			background-color: #fff;
+			border-bottom: 0px;
+			color: #000;
+			background-color: #fff;
+			}
+			
+		p {
+			text-align: left;
+			}
+			
+		p.indent {
+			margin-left: 20px;
+			}
+			
+		p.indent2 {
+			margin-left: 40px;
+			}
+			
+		p.center {
+			text-align: center;
+			}
+			
+		p.small-font {
+			display: none;
+			}
+			
+		p.hang {
+			text-indent: -4em;
+			margin-left: 8em;
+			}					
+			
+		table.examples {
+			margin-left: 40px;
+			margin-right: 40px;
+			border: 0;
+			font-size: 11px;
+			}
+			
+			
+/* End of screen style sheet */
+							

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<dragAndDrop>
+
+	<setup title="XHTML Matchup">
+		<prefs dynamicStage="1" playSounds="1" clipFloat="1" onDropVanish="1" targetsChange="1" nextShow="0"></prefs>
+		<stage LtoR="1" dStartX="30" dStartY="50" dIncrement="10" tStartX="175" tStartY="50" tIncrement="9"></stage>
+		<float floatDist="30"></float>		
+		<error>Drag the clip over one of the target boxes.</error>
+		<feedback></feedback>
+		<complete>&lt;br&gt;&lt;b&gt;Congratulations! You have completed this XHTML Matchup exercise.&lt;/b&gt;</complete>
+		<next URL="" target="" setX="158" setY="100"></next>		
+	</setup>
+
+	<targetClips>
+		<clip title="" graphic="">
+			<startText>The HTML standards-setting organization</startText>
+			<successText>W3C: The HTML standards-setting organization</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>An example of an empty element</startText>
+			<successText>meta: An example of an empty element</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Commonly thought of as the latest version of HTML</startText>
+			<successText>XHTML: Commonly thought of as the latest version of HTML</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Provide descriptive information about the document not displayed in the body</startText>
+			<successText>head tags: Provide descriptive information about the document not displayed in the body</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Text typed between the opening and closing title tags display in the browser's title bar</startText>
+			<successText>title tags: Text typed between the opening and closing title tags displays in the browser's title bar.</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Contain the actual content of the Web page</startText>
+			<successText>body tags: Contain the actual content of the Web page</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Contain the entire document other than the !DOCTYPE declaration</startText>
+			<successText>html tags: Contain the entire document other than the !DOCTYPE declaration</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>Elements with both opening and closing tags</startText>
+			<successText>containers: Elements with both opening and closing tags</successText>
+		</clip>
+		
+		<clip title="" graphic="">
+			<startText>References the document type definition</startText>
+			<successText>DTD: References the document type definition</successText>
+		</clip>
+		
+		
+		
+	</targetClips>
+	
+	<dragClips>
+		
+		<clip title="head tags" graphic="" target="tc3">
+			<feedback id="default">No, the head tags provide descriptive information about the document that is not displayed in the body of the document.</feedback>
+			<feedback id="correct">Correct! The head tags provide descriptive information about the document that is not displayed in the body of the document.</feedback>
+		</clip>
+				
+		
+		<clip title="body tags" graphic="" target="tc5">
+			<feedback id="default">No, the body tags contain the actual content of the Web page.</feedback>
+			<feedback id="correct">Correct! The body tags contain the actual content of the Web page.</feedback>
+		</clip>
+		
+		<clip title="DTD" graphic="" target="tc8">
+			<feedback id="default">No, the DTD references the document type definition.</feedback>
+			<feedback id="correct">Correct! The DTD references the document type definition.</feedback>
+		</clip>
+		
+		<clip title="meta" graphic="" target="tc1">
+			<feedback id="default">No, the meta element is an example of an empty element.</feedback>
+			<feedback id="correct">Correct! The meta element is an example of an empty element.</feedback>
+		</clip>
+						
+		<clip title="W3C" graphic="" target="tc0">
+			<feedback id="default">No, the W3C is the HTML standards-setting organization.</feedback>
+			<feedback id="correct">Correct! The W3C is the HTML standards-setting organization.</feedback>
+		</clip>
+		
+		<clip title="title tags" graphic="" target="tc4">
+			<feedback id="default">No, text typed between these tags displays in the browser's title bar.</feedback>
+			<feedback id="correct">Correct! The text contained within the title tag displays in the browser's title bar.</feedback>
+		</clip>
+		
+		<clip title="XHTML" graphic="" target="tc2">
+			<feedback id="default">No, XHTML is commonly thought of as the latest version of HTML.</feedback>
+			<feedback id="correct">Correct! XHTML is commonly thought of as the latest version of HTML.</feedback>
+		</clip>
+		
+		<clip title="containers" graphic="" target="tc7">
+			<feedback id="default">No, containers are elements with both opening and closing tags.</feedback>
+			<feedback id="correct">Correct! Containers are elements with both opening and closing tags.</feedback>
+		</clip>
+		
+		<clip title="html tags" graphic="" target="tc6">
+			<feedback id="default">No, html tags contain the entire document other than the !DOCTYPE declaration.</feedback>
+			<feedback id="correct">Correct! html tags contain the entire document other than the !DOCTYPE declaration.</feedback>
+		</clip>
+		
+	</dragClips>
+
+	
+</dragAndDrop>

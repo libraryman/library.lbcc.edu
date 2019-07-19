@@ -1,0 +1,1 @@
+This is the archived version of the old Long Beach City College Website formerly found at library.lbcc.edu

@@ -1,0 +1,320 @@
+/* Screen style sheet for library collection development policy  */
+
+
+body {
+	background-color: #fff;
+	color: #606060;
+	font-size: .85em;
+	font-family: "trebuchet ms", verdana, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	}
+
+#header {
+	background-color: #980000;
+	color: #fff;
+	padding: 2.0em 0 2.0em 5.0em;
+	margin-bottom: 0;
+	}
+
+#header p {
+	background-color: transparent;
+	color: #fff;
+	font: bold 2em palatino, georgia, serif;
+	margin: auto 10em auto 0;
+	}
+	
+
+/* Link to main content for text readers */
+
+#skiplinks {
+	background-color: transparent;
+	color: #fff;
+	font-size: .9em;
+	line-height: 1.5em;
+	font-variant: small-caps;
+	position: absolute;
+	top: 1.0em;
+	right: 1.0em;
+	width: 15.0em;
+	padding: 0;
+	}
+
+#skiplinks a:link, #skiplinks a:visited {
+	background-color: transparent;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding-left: 0.5em;
+	border-bottom: 1px solid #fff;
+	}
+
+#skiplinks a:hover, #skiplinks a:active, #skiplinks a:focus {
+	background-color: #ddd;
+	color: #980000;
+	display: block;
+	border-bottom: 1px solid #fff;
+	}
+	
+
+/* Global site navigation across top */
+
+#nav-toplevel {
+	background-color: transparent;
+	color: #fff;
+	max-width: 56em;
+	}
+
+#nav-main {
+	background-color: transparent;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font: bold 1.1em palatino, georgia, serif;
+	font-variant: small-caps;
+	}
+
+#nav-main:after {
+	content: ".";
+	display: block;
+	line-height: 1px;
+	font-size: 1px;
+	clear: both;
+	}
+
+#nav-main ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 ;
+	}
+
+#nav-main li {
+	display: block;
+	float: left;
+	width: 13%;
+	margin: 0 0.8% 0 0;
+	padding: 0;
+	}
+
+#nav-main ul li a:link, #nav-main ul li a:visited {
+	background-color: transparent;
+	color: #606060;
+	display: block;
+	width: 100%;
+	padding: 0.3em;
+	border-right: 1px solid #980000;
+	border-bottom:  1px solid #980000;
+	text-decoration: none;
+	text-align: center;
+	}
+
+#nav-main li a {
+	width: auto;
+	}
+
+#nav-main ul li a:hover {
+	background-color: #ddd;
+	color: #980000;
+	}
+
+#nav-main ul li a.current {
+	background-color: #980000;
+	color: #fff;
+	}
+	
+	
+/* Container for right-side navbars and main content */
+	
+#container {
+	max-width: 66em;
+	clear: both;
+	width: 100%;
+	margin: 3em auto 0 0;
+	}
+	
+/* Subnavigation on right side  */
+
+#nav-subs {
+	float: left;
+	width: 16%;
+	margin: 2.5em 0 0 0;
+	padding: 0;
+	font-family: "trebuchet ms", arial, sans-serif;
+	font-size: 0.9em;
+	border-bottom: 2px solid #980000;
+	}
+	
+#nav-subs h4 {
+	background-color: #fff;
+	color: #980000;
+	font: bold 1.3em "trebuchet ms", verdana, arial, sans-serif;
+	margin-bottom: -0.1em;	
+	padding: 0 0.5em 0.2em 0.5em;
+	border-bottom: 2px solid #980000;	
+	}
+
+
+#nav-top ul {
+	border-top: 1px solid #980000;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+#nav-top li a:link, #nav-top li a:visited {
+	display: block;
+	border-bottom: solid 1px #ddd;
+	border-right: solid 0.9em #ddd;
+	padding: 0.175em 1.0em;
+	color: #606060;
+	background-color: #fff;
+	text-decoration: none;
+	}
+
+#nav-top li a:hover, #nav-top li a:active, #nav-top li a:focus {
+	border-right: solid 0.9em #980000;
+	background-color: #ddd;
+	color: #980000;
+	border-bottom: 1px solid #980000;
+	}
+
+/* Quick links on right side  */
+
+#nav-bottom {
+	margin: 2.5em 0 0 0;
+	padding: 0;
+	}
+	
+#nav-bottom h4 {
+	background-color: #fff;
+	color: #980000;
+	font: bold 1.3em "trebuchet ms", verdana, arial, sans-serif;
+	padding: 0 0.5em 0.2em 0.5em;
+	border-bottom: 2px solid #980000;
+	}
+
+#nav-bottom ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+#nav-bottom li a:link, #nav-bottom li a:visited {
+	background-color: #fff;
+	color: #606060;
+	display: block;
+	padding: 0.175em 1.0em;
+	border-bottom: 1px solid #ddd;
+	border-right: 0.9em solid #ddd;
+	text-decoration: none;
+	}
+
+#nav-bottom li a:hover, #nav-bottom li a:active, #nav-bottom li a:focus {
+	background-color: #ddd;
+	color: #980000;
+	border-right:  0.9em solid #980000;
+	border-bottom: 1px solid #980000;
+	}
+	
+	
+/* Main content */
+
+#content * {
+	margin: 0;
+	}
+
+#content {
+	background-color: #fff;
+	color: #606060;
+	width: 70%;
+	padding: 1.5em 1.5em 1.5em 1.5em;
+	margin: 0;
+	float: left;
+	border-right:  1px solid #980000;
+	}
+
+#content p, #content ol, #content ul {
+	font-size: 1.0em;
+	font-family: "trebuchet ms", verdana, arial, sans-serif;
+	line-height: 1.9em;
+	margin: 0.5em 2.0em;
+	text-align: justify;
+	}
+
+#content p {
+	text-indent: 1.5em;
+	}
+	
+#content p.highlight {
+	color: #606060;
+	background-color: #ff9;
+	}
+
+#content .first-letter {
+	font-size: 1.5em; 
+	font-weight: normal;
+	font-family: "trebuchet ms", verdana, arial, sans-serif;
+	}
+	
+#content ul li {
+	list-style-type: none;
+	}
+	
+/* Footer for address and validation */
+	
+#footer {
+	margin: 2em 0;
+	padding: 1em 4.5em;
+	font-size: 0.8em;
+	clear: both;
+	border-top: 1px solid #980000;
+	text-align: center;
+	line-height: 2em;
+	}
+	
+/* Headings */
+	
+h1, h2, h3 {
+	background-color: #fff;
+	color: #980000;
+	font-family: palatino, georgia, times, "Times New Roman", serif;
+	}
+
+h1 {
+	font-size: 2.2em;
+	border-bottom: 1px solid #980000;
+	letter-spacing: -1px;
+	margin: 0.5em 3em 0.75em 0;
+	}
+
+h2 {
+	font-size: 1.7em;
+	background: url(diamond.gif) #fff no-repeat center left;
+	padding-left: 1em;
+	border-top: 10px solid #fff;
+	}
+	
+h3 {
+	font-size: 1.3em;
+	padding-left: 2.5em;
+	padding-top: 0.4em;
+	}
+	
+	
+/* Links */
+
+a:link, a:visited {
+	background-color: #fff;
+	color: #980000;
+	font-weight: bold;
+	text-decoration: underline;
+	}
+
+a:hover, a:active, a:focus {
+	background-color: #ddd;
+	color: #980000;
+	font-weight: bold;
+	text-decoration: underline;
+	}
+
+/* End of screen style sheet */

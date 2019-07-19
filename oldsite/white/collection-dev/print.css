@@ -1,0 +1,47 @@
+/* Print style sheet */
+
+
+body {
+	background-color: #fff;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	font-family: times, serif;
+	}
+
+#nav-toplevel {
+	display: none;
+	}
+	
+#nav-main * {
+	display: none; /* kill global navigation across top */
+	}
+
+#content {
+	font-size: 11pt;
+	line-height: 16pt;
+	width: 85%;
+	}
+	
+#content a {
+	text-decoration: inherit;
+	color: inherit;
+	}
+
+#nav-subs * {
+	display: none;  /* kill navigation bar */
+	}
+	
+#nav-section {
+	display: none;
+	}
+	
+#nav-supp {
+	display: none;
+	}
+	
+#footer {
+	display: none; /* kill footer */
+	}
+
+/* End print style sheet */

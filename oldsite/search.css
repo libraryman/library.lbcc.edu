@@ -1,0 +1,212 @@
+#searchtabs > div {
+	background-color: #fff;
+	padding: 5px 5px;
+}
+
+.js #searchtabs .ui-tabs-hide {
+	display:none;
+}
+
+.ui-widget-header {
+	background-color: transparent;
+	background-image: none;
+}
+
+.ui-widget-cotent {
+	border-width: 0;
+	background-color: transparent;
+	background-image: none;
+}
+
+.ui-state-active {
+	background-color: transparent;
+	background-image: none;
+}
+
+#search-all input {
+	color: black;
+}
+
+/* Search tabs */
+#mainsearch {
+	margin: 10px 0 0 15px;
+	line-height: 1.5em;
+}
+
+#mainsearch h1 {
+	color: #8f3931;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 3px 0;
+	margin-top: 10px;
+	line-height: normal;
+	font-family: Helvetica, Arial, sans-serif;
+	border-bottom: none;
+	/*	font-family: "trebuchet ms",sans-serif;*/
+}
+
+#mainsearch label {
+	
+	/* display: none; */
+}
+
+#mainsearch p.breadcrumb {
+	font-size: 9px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 0px;
+	margin-bottom:-4px;
+	color: #666;
+}
+
+
+#searchtabs .main-search-field {
+	font-size: .7em;
+	width: 340px;
+	height: 23px;
+	border-width: 0 0 0 0;
+	border-color: #999;
+	vertical-align: bottom;
+	padding: 0 1px 0 4px;
+}
+
+.front-page-submit {
+	background: url("/website/images/searchtabs-button-sprite.png");
+	background-position: 0 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display:inline-block;
+	width: 60px;
+	height: 23px;
+}
+
+.front-page-submit:hover {
+	cursor: pointer;
+}
+
+.front-page-submit:active{
+	cursor: pointer;
+	background-position: 0 23px;	
+}
+
+label.main-search-label {
+	font-size: .7em;
+	padding-left: 5px;
+}
+
+#searchtabs {
+	background-color: transparent;
+	background-image: none;
+	border-width: 0;
+	margin-left: 0px;
+	padding-left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#searchtabs .ui-state-default {
+	background-image: none;
+}
+	
+#searchtabs ul.ui-tabs-nav {
+	padding-left: 0;	
+}
+
+#searchtabs .ui-tabs-nav li {
+	margin-right: 0;
+	font-size: .7em;
+}
+
+#searchtabs .ui-tabs-nav li a {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: bold;
+}
+
+#searchtabs .ui-state-active {
+	background-color: #A30D01;
+	border-color: #A30D01;
+}
+#searchtabs .ui-state-default a {
+	color: #777; 
+}
+#searchtabs .ui-state-active a {
+	color: white;
+	
+}
+#searchtabs .ui-tabs-panel {
+	border-width: 0 1px 1px 1px;
+	border-color: #A30D01;	
+	background-color: #A30D01;
+}
+
+#searchtabs .ui-widget-header {
+	border-width: 0 0 1px 0;
+}
+
+#searchtabs .main-search-field p {
+	font-size: .7em;
+}
+
+#searchtabs .active {
+	color: #000;
+}
+
+p.search-more, p.search-options {
+	font-size: .6em;
+	text-align: left;
+	color: white;
+}
+
+p.search-more a {
+	color: white;
+}
+
+p.search-example {
+	font-size: .6em;
+	text-align: left;
+	color: white;
+}
+
+p.search-example, p.search-options {
+/*	margin-left: 2px;*/
+}
+
+.search-more {
+	float: right;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Arial, sans-serif; font-size: .7em; }
+.ui-widget input {
+}
+.button {
+	background: #888;
+/*	background: #556677;*/
+	color: #fff;
+	border: 1px solid #666;
+	padding: 3px; /*removed 8/23/12 because a-z buttons weren't displaying correct in chrome */ 
+	padding-bottom: 5px;
+	margin: 0px;
+	height: 22px;
+	cursor: pointer;
+	/*	background-color: #67849C;*/
+}	
+.button-active {
+	background: #556677;
+	color: #fff;
+	border: 1px solid #666;
+	padding: 2px;
+	padding-bottom: 5px;
+	margin: 0px;
+	height: 22px;
+	cursor: pointer;
+}
+.button-disabled {
+    border: 1px outset ButtonFace;
+    color: GrayText;
+    cursor: text;
+	background: #fff;	
+	padding: 2px;
+	padding-bottom: 5px;
+	margin: 0px;
+	height: 22px;
+}

@@ -1,0 +1,509 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../../../../../libweb/libweb/web-content/seth/learninig%20outcomesrev3.htm">
+<link rel=Preview href=preview.wmf>
+<meta name=Robots content=NoIndex>
+<script src=script.js></script><script><!--
+if( !(IsWin("PPTOtl")||IsWin("PPTNav")||IsWin("PPTOtlNav")) )
+{
+        obj = GetObj("Main-File")
+        parent.location.href=obj.href
+}
+var gOtlHiliteClr="#ffffff",gOtlNormalClr="#000000",gOtlActiveClr="#ffff00",gSelected="",gTxtState=false,gChildEntryTable=new Array()
+function Load()
+{
+        if( IsWin("PPTOtl" ) ){ LoadOtl(); parent.gOtlLoaded=true; return }
+        if( g_supportsPPTHTML ) {
+                if( IsWin("PPTNav" ) ){ LoadNav("NavObj",UpdNav); parent.gNavLoaded=true; return }
+                if( IsWin("PPTOtlNav" ) ){ LoadNav("OtlNavObj",UpdOtlNav); parent.gOtlNavLoaded=true; return }
+        }
+}
+function Upd(){ if( IsWin("PPTNav") ) LoadNav("NavObj",UpdNav) }
+function LoadNav( oId,UpdFunc )
+{
+        document.ondragstart=CancelDrag
+        document.onselectstart=CancelDrag
+        document.body.style.margin=2
+        UpdFunc()
+        obj=document.all.item(oId)
+        obj.style.display="block"
+        obj.style.visibility="visible"
+        document.bgColor="threedface"
+        if( parent.frames["PPTNts"] )
+                notesBtn.style.display = ""
+        if( parent.gHasNarration )
+                nb_voiceBorder.style.display = ""
+}
+function LoadOtl()
+{
+        var otl=GetObj("OtlObj")
+        otl.style.display="block"
+        otl.style.visibility="visible"
+        if( gOtlActiveClr == "" ) gOtlActiveClr=document.linkColor
+        if( gOtlHiliteClr == "" ) gOtlHiliteClr=document.fgColor
+        if( gOtlNormalClr == "" )
+                gOtlNormalClr=document.bgColor
+        else
+                document.bgColor=gOtlNormalClr
+        InitArray()
+        if( ObjExists( parent.gCurSld ) ) {
+                ChangeState( parent.gCurSld,gOtlNormalClr,gOtlHiliteClr )
+                gSelected=parent.gCurSld
+        }
+        else gSelected = -1
+        UpdOtl()
+}
+function UpdOtl(){ UpdIdx(parent.gCurSld) }
+function UpdIdx( idx )
+{
+        if( gSelected != idx ) {
+                if( gSelected > 0 )
+                        ChangeState( gSelected,gOtlHiliteClr,gOtlNormalClr )
+                if( ObjExists( idx ) ) {
+                        gSelected = idx
+                        ChangeState( gSelected,gOtlNormalClr,gOtlHiliteClr )
+                }
+                else gSelected = -1
+        }
+        if( gTxtState != parent.gOtlTxtExp ) {
+                state = "block"
+                if( !parent.gOtlTxtExp )
+                        state="none"
+                for(ii=0; ii<gChildEntryTable.length; ii++) {
+                        obj=gChildEntryTable[ii];
+                        if( obj.id == null ) continue;
+                        if( obj.id.indexOf("PPTC") >= 0 )
+                                obj.style.display=state;
+                }
+                gTxtState=parent.gOtlTxtExp
+                if( ObjExists( gSelected ) )
+                        ChangeState( gSelected,gOtlNormalClr,gOtlHiliteClr )
+        }
+}
+function InitArray()
+{
+        count=0
+        var list=GetTags(document,"DIV");
+        for(ii=0; ii<list.length; ii++) {
+                obj=list.item(ii)
+                if( obj.id == null ) continue
+                if( obj.id.indexOf("PPTC") >= 0 )
+                        gChildEntryTable[count++]=obj
+        }
+}
+function ChangeState( idx,fgColor,bgColor )
+{
+        obj=GetObj("PPTL"+idx)
+        obj.style.color=fgColor
+        obj=GetObj("PPTP"+idx)
+        obj.style.backgroundColor=bgColor
+}
+function ChgClr( o,clr ){ if( o.id != "PPTL"+gSelected ) o.style.color=clr }
+function Over( src ){ ChgClr(GetLink(src),gOtlActiveClr) }
+function Out( src ){ ChgClr(GetLink(src),gOtlHiliteClr) }
+function Follow(src){ window.location.href = GetLink(src).href; }
+function ObjExists( ii ) { obj=GetObj("PPTP"+ii ); return( obj ) }
+function GoToSld( href ){ UpdIdx(parent.GetSldNum(href)); parent.GoToSld( href ) }
+function CancelDrag(){ window.event.cancelBubble=true;window.event.returnValue=false}
+function GetLink(src)
+{
+   if(src.tagName=="A") return src
+   else return GetTags(src,"A").item(0)
+}
+function UpdNav()
+{
+        txt = "<center>";
+        if( parent.GetHrefObj( parent.gCurSld ).mOrigVis == 1 )
+                txt += "Slide " + parent.GetCurSldNum() + " of " + parent.GetNumSlds()
+        else
+                txt += "Hidden Slide"
+        txt += "</center>";
+        nav_text.innerHTML = txt;
+        if( !parent.HasPrevSld() )
+                gBtnArr["nb_prev"].Enabled(0)
+        else
+                gBtnArr["nb_prev"].Enabled(1)
+        if( !parent.HasNextSld() )
+                gBtnArr["nb_next"].Enabled(0)
+        else
+                gBtnArr["nb_next"].Enabled(1)
+        gBtnArr["nb_nts"].SetEnabled()
+        gBtnArr["nb_nts"].SetFlag( parent.gHasNts )
+        gBtnArr["nb_sldshw"].Enabled(1)
+        gBtnArr["nb_voice"].Enabled(1)
+}
+function UpdOtlNav()
+{
+        gBtnArr["nb_otl"].SetEnabled();
+        if( parent.gOtlOpen )
+                gBtnArr["nb_otlTxt"].Enabled( true );
+        else
+                document.all.item("nb_otlTxtBorder").style.visibility = "hidden";
+}
+
+//--></script>
+<style>
+<!--.PTxt
+        {position:relative;
+        width:100%;
+        margin-top:5px;
+        padding-left:2px;
+        font-weight:bold;}
+.CTxt
+        {position:relative;
+        width:100%;
+        margin-top:5px;}
+a
+        {color:white;
+        text-decoration:none;}
+ul
+        {color:white;
+        margin-bottom:0px;
+        margin-left:20px;}
+.sldNum
+        {margin-top:5px;
+        color:white;}
+.button
+        {position:absolute;
+        width:32px;
+        height:20px;
+        border-style:solid;
+        border-width:1px;
+        border-color:threedface;}
+-->
+</style>
+</head>
+
+<body onload="Load()" style='margin:2px'>
+
+<div id=NavObj onload="Load()" onmouseover="BtnOnOver()"
+onmousedown="BtnOnDown()" onmouseout="BtnOnOut()" onmouseup="BtnOnUp()"
+onkeypress="_KPH()" style='display:none;visibility:hidden'>
+<table id="notesBtn" style='position:absolute;display:none;width:70px' align=left cellpadding=0
+ cellspacing=0>
+ <td nowrap>
+ <div id="nb_ntsElem" align=center style='position:relative;padding:3px;
+ font-family:Arial;color:buttontext;font-size:9pt'><img src="notes_flag.gif"
+ border=0 id="notes_flag" style='display:none'><span
+style='mso-spacerun:yes'>  </span>Notes</div>
+ <div title="Show/Hide Notes" id="nb_nts" style='position:absolute;top:0%;
+ left:0%;width:100%;height:100%'></div>
+ </td>
+</table>
+
+<table style='position:relative;width:70px' align=right cellpadding=0 cellspacing=0>
+ <td nowrap>
+ <div id="nb_sldshwText" title="Full
+Screen Slide Show" align=center style='position:relative;margin-left:20px;padding:3px;
+ font-family:Arial;color:buttontext;font-size:9pt;cursor:default'>Slide
+Show</div>
+ <div id="nb_sldshwBorder" title="Full Screen Slide Show" style='position:absolute;top:0%;left:0%;width:100%;height:20px'>
+ <div style='position:absolute;clip:rect(0px, 18px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_sldshw" style='position:relative;left:-254px'></div>
+ </div>
+ </td>
+ <td>
+ <div id="nb_voiceBorder" style='display:none;position:absolute;top:0;left:-40px;
+ width:20px;height:20px'>
+ <div style='position:absolute;clip:rect(0px, 18px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_voice" title="Pause/Play Narration" style='position:
+ relative;left:-290px'></div>
+ </div>
+ </td>
+</table>
+
+<table style='position:relative' align=center cellpadding=0 cellspacing=0>
+ <td nowrap>
+ <div id="nb_prevBorder" class=button style='left:-30px'>
+ <div style='position:absolute;clip:rect(0px, 30px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_prev" title="Previous Slide" style='position:relative;
+ left:0px'></div>
+ </div>
+ <span id="nav_text" style='position:relative;top:3px;width:100px;font-family:
+ Arial;color:buttontext;font-size:9pt'></span>
+ <div id="nb_nextBorder" class=button>
+ <div style='position:absolute;clip:rect(0px, 30px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_next" title="Next Slide" style='position:relative;
+ left:-90px'></div>
+ </div>
+ </td>
+</table>
+</div>
+
+<div id=OtlNavObj onload="Load()" onmouseover="BtnOnOver()"
+onmousedown="BtnOnDown()" onmouseout="BtnOnOut()" onmouseup="BtnOnUp()"
+onkeypress="_KPH()" style='display:none;visibility:hidden'>
+
+<table style='position:relative;width:70px' align=left cellpadding=0 cellspacing=0>
+ <td nowrap><div title="Show/Hide
+Outline" id="nb_otl"
+ style='position:absolute;top:0%;left:0%;width:100%;height:100%;cursor:default'>
+ <div id="nb_otlElem" align=center style='position:relative;padding:3px;font-family:Arial;
+ color:buttontext;font-size:9pt'>Outline</div></div>
+ </td>
+</table>
+
+<table style='position:relative' align=center cellpadding=0 cellspacing=0>
+ <td>
+ <div style='position:absolute;left:-18px;width:24px;height:20px;border-style:
+ solid;border-width:1px;border-color:threedface' id="nb_otlTxtBorder">
+ <div style='position:absolute;clip:rect(0px, 22px, 18px, 0px)'><img
+ src=buttons.gif id="nb_otlTxt" title="Expand/Collapse Outline"
+ style='position:relative;left:-157px'></div>
+ </div>
+ </td>
+</table>
+
+</div>
+
+<div id=OtlObj style='display:none;visibility:hidden;'>
+
+
+<table width="100%" style='font-family:Arial;font-size:9pt'>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>1</font></div>
+  </td>
+  <td width="100%">
+  <div id=PPTP1 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0001.htm');" id=PPTL1>&quot;Learning Outcomes:&quot;</a></font></div>
+  <div id=PPTC1 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Learning Outcomes: A Framework for Campus-wide Implementation</li>
+   <li>Dr. Ramchandran Sethuraman</li>
+   <li>Flex Day, September 28, 2004</li>
+   <br>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>2</font></div>
+  </td>
+  <td>
+  <div id=PPTP2 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0002.htm');" id=PPTL2>Definition</a></font></div>
+  <div id=PPTC2 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <br>
+   <li>“Assessment-as-Learning is a multidimensional process, integral to
+       learning, which involves observing performances of an individual learner
+       in action and judging them on the basis of public developmental criteria
+       with resulting feedback to the learner.”</li>
+   <li></li>
+   <li>                 --Assessment-As-Learning- at Alverno College</li>
+   <br>
+   <br>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>3</font></div>
+  </td>
+  <td>
+  <div id=PPTP3 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0061.htm');" id=PPTL3>More definition…</a></font></div>
+  <div id=PPTC3 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li><span style='mso-spacerun:yes'>   </span>“Learning outcomes are
+       statements of learning achievement which may take the form of the
+       acquisition of knowledge, understanding, an intellectual skill or a
+       practical skill….They provide a clear explanation of what is required to
+       complete successfully a module in a [program] of study providing there
+       are strong links between the learning outcomes, the assessment criteria,
+       and the assessment methods.”</li>
+   <br>
+   <br>
+   <li><span style='mso-spacerun:yes'> </span>                          -- From: An Action Plan for
+                                        <span style='mso-spacerun:yes'>  </span>Outcomes Assessment in Your
+       Library</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>4</font></div>
+  </td>
+  <td>
+  <div id=PPTP4 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0062.htm');" id=PPTL4>Why assessment? Why now?</a></font></div>
+  <div id=PPTC4 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Boyer report</li>
+   <li>Accreditation</li>
+   <li>Legislative mandates</li>
+   <li>Accountability</li>
+   <li>Learner centered approaches</li>
+   <li>Facilitate life long learning process</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>5</font></div>
+  </td>
+  <td>
+  <div id=PPTP5 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0063.htm');" id=PPTL5>Good outcomes are:</a></font></div>
+  <div id=PPTC5 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Measurable</li>
+   <li>Integrated</li>
+   <li>Developmental</li>
+   <li>Transferable</li>
+   <li>Clear to the student</li>
+   <li>“In order to”</li>
+   <li>Reflective of Bloom’s Taxonomy</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>6</font></div>
+  </td>
+  <td>
+  <div id=PPTP6 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0064.htm');" id=PPTL6>Outcomes Formula</a></font></div>
+  <div id=PPTC6 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>7</font></div>
+  </td>
+  <td>
+  <div id=PPTP7 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0065.htm');" id=PPTL7>Instructional Design
+  Process</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>8</font></div>
+  </td>
+  <td>
+  <div id=PPTP8 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0067.htm');" id=PPTL8>Learning Outcomes in
+  Instructional Design</a></font></div>
+  <div id=PPTC8 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li></li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>9</font></div>
+  </td>
+  <td>
+  <div id=PPTP9 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0068.htm');" id=PPTL9>Three Levels of <br>
+    Learning Outcomes</a></font></div>
+  <div id=PPTC9 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Course level (Embedded evaluation)</li>
+   <li>Program/Department level</li>
+   <li>Institutional level (Calibrating institutional learning outcomes
+       consistent with program and course level learning outcomes)</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>10</font></div>
+  </td>
+  <td>
+  <div id=PPTP10 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0069.htm');" id=PPTL10>Conclusion</a></font></div>
+  <div id=PPTC10 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>“Assessment is an ongoing process aimed at understanding and improving
+       student learning.” <br>
+                -- Tom Angelo, AAHE Bulletin, 1996</li>
+   <li>“Institutional assessment efforts should not be concerned about valuing
+       what can be measured, but instead about measuring what is valued.”</li>
+   <ul>
+    <ul>
+     <li>-- A.W. Astin</li>
+    </ul>
+   </ul>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+</table>
+
+
+
+</div>
+
+<div style='display:none'><a href="v3_document.htm"></a><a href=preview.wmf></a><a
+href="v3_next_active.gif"></a><a href="v3_next_disabled.gif"></a><a
+href="v3_prev_active.gif"></a><a href="v3_prev_disabled.gif"></a><a
+href="v3_outline_collapse.gif"></a><a href="v3_outline_expand.gif"></a><a
+href="v3_space.gif"></a><a href="v3_endshow.htm"></a><a
+href="v3_navigation_bar.htm"></a><a href="v3_outline_navigation_bar.htm"></a><a
+href="v3_outline_collapsed.htm"></a><a href="v3_outline_expanded.htm"></a><a
+href="v3_blank_notes.htm"></a><a href="v3_slide0064_notes_pane.htm"></a><a
+href=master167.htm></a><a href=master167.xml></a><a
+href="master167_image001.jpg"></a><a href=master168.htm></a><a
+href=master168.xml></a><a href=master02.htm></a><a href=pres.xml></a><a
+href="v3_slide0001.htm"></a><a href="v3_slide0001_image002.jpg"></a><a
+href="v3_slide0002.htm"></a><a href="v3_slide0061.htm"></a><a
+href="v3_slide0062.htm"></a><a href="v3_slide0063.htm"></a><a
+href="v3_slide0064.htm"></a><a href="v3_slide0064_background.gif"></a><a
+href="v3_slide0065.htm"></a><a href="v3_slide0065_background.gif"></a><a
+href="v3_slide0067.htm"></a><a href="v3_slide0067_image003.gif"></a><a
+href="v3_slide0068.htm"></a><a href="v3_slide0069.htm"></a><a
+href=slide0001.htm></a><a href="slide0001_image004.jpg"></a><a
+href="slide0001_image005.jpg"></a><a href=slide0002.htm></a><a
+href=slide0061.htm></a><a href=slide0062.htm></a><a href=slide0063.htm></a><a
+href=slide0064.htm></a><a href="slide0064_image006.gif"></a><a
+href=slide0065.htm></a><a href="slide0065_image007.jpg"></a><a
+href="slide0065_image008.jpg"></a><a href=slide0067.htm></a><a
+href="slide0067_image009.jpg"></a><a href="slide0067_image010.gif"></a><a
+href="slide0067_image011.gif"></a><a href="slide0067_image012.gif"></a><a
+href="slide0067_image013.gif"></a><a href=slide0068.htm></a><a
+href=image014.gif></a><a href=slide0069.htm></a><a href=master01.htm></a><a
+href="master167_stylesheet.css"></a><a href=image015.gif></a><a
+href=image016.gif></a><a href=image017.gif></a><a href=image018.gif></a><a
+href=script.js></a><a href="../../../../../libweb/libweb/web-content/seth/learninig%20outcomesrev3.htm"></a><a
+href=fullscreen.htm></a><a href="notes_flag.gif"></a><a href=buttons.gif></a><a
+href=frame.htm></a><a href=outline.htm></a></div>
+
+</body>
+
+</html>

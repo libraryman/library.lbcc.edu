@@ -1,0 +1,123 @@
+A {
+	TEXT-DECORATION: underline
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #330066
+}
+A:hover {
+	COLOR: #666666
+}
+A:active {
+	COLOR: #0099ff
+}
+BODY {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10pt; BACKGROUND: #ffffff; PADDING-BOTTOM: 20pt; MARGIN-LEFT: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+P {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 16pt; COLOR: #330066; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 14pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; COLOR: #330066; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H5 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #330066; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H6 {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+OL {
+	FONT-SIZE: 10pt; LIST-STYLE-TYPE: decimal
+}
+UL {
+	FONT-SIZE: 10pt; LIST-STYLE-TYPE: circle
+}
+.GeneralCaption {
+	FONT-SIZE: 9px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+.GeneralTitle1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 16pt; COLOR: #330066; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.GeneralTitle1a {
+	FONT-WEIGHT: normal; FONT-SIZE: 16pt; COLOR: #330066; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #eeeeee
+}
+.GatewayTitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 22pt; COLOR: #ffffff; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: center
+}
+.GatewayLink {
+	MARGIN-LEFT: 6pt
+}
+.GatewayLinkCategory {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; MARGIN-LEFT: 2pt; COLOR: #330066; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.GatewayFeaturedNewsHeading {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; MARGIN-LEFT: 3pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.GatewayQuickLinksHeading {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; MARGIN-LEFT: 3pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.GatewayQuickLinks {
+	FONT-SIZE: 10pt; TEXT-ALIGN: center
+}
+.HomepageNewsItemLink {
+	PADDING-RIGHT: 10pt; FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: right; TEXT-DECORATION: underline
+}
+.HomepageNewsItemLink A {
+	COLOR: #333333
+}
+.HomepageNewsItemLink A:link {
+	COLOR: #333333
+}
+.HomepageNewsItemLink A:active {
+	COLOR: #0099ff
+}
+.HomepageNewsItemLink A:hover {
+	COLOR: #999999
+}
+.HomepageNewsItemLink A:visited {
+	COLOR: #330066
+}
+.HomePageMainLinkHeading {
+	PADDING-LEFT: 12pt; FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #bcb0c4; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.HomePageLBCCFeatures {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #a4a49a; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: right
+}
+.HomepageMainLink {
+	PADDING-LEFT: 12pt; FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left; TEXT-DECORATION: underline
+}
+.HomepageMainLink A {
+	COLOR: #000000
+}
+.HomepageMainLink A:link {
+	COLOR: #000000
+}
+.HomepageMainLink A:active {
+	COLOR: #0099ff
+}
+.HomepageMainLink A:hover {
+	COLOR: #999999
+}
+.HomePageParagraph {
+	PADDING-LEFT: 12pt; FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.HomePageFeatureCaptions {
+	PADDING-RIGHT: 3pt; PADDING-LEFT: 3pt; FONT-SIZE: 8pt; PADDING-BOTTOM: 3pt; COLOR: #000000; PADDING-TOP: 3pt; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.HomePageSearchBox {
+	BORDER-RIGHT: #858480 2px solid; BORDER-TOP: #858480 2px solid; FONT-SIZE: 10pt; MARGIN-LEFT: 12px; BORDER-LEFT: #858480 2px solid; BORDER-BOTTOM: #858480 2px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.IndexMainLinkHeading {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #bcb0c4; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}

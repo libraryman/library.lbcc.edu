@@ -1,0 +1,858 @@
+/********************* style sheet for library website ********************/
+/********************* developed by monica white **************************/
+
+#content {
+	color: #333;
+	background-color: #fff;
+	font-size: .8em;
+	font-family: verdana, arial, helvetica, sans-serif;
+	line-height: 1.5em;
+	width: 98%;
+	max-width: 1000px;
+	}
+	
+#content p {
+	margin-left: 2em;
+	}
+	
+#content p.indent {
+	margin-left: 4em;
+	}
+	
+#content p.block {
+	padding: 10px;
+	color: #333;
+	background-color: #efefef;
+	border: 1px solid silver;
+	margin-left: 8em;
+	width: 50%;
+	}
+	
+/*********** link styles ************/
+
+#content a:link, #breadcrumb a:link {
+	text-decoration: none;
+	color: #08458c;
+	background-color: transparent;
+	border-bottom: 1px dotted #08458c;
+	}
+	
+#content a:visited {
+	color: #000;
+	background-color: transparent;
+	text-decoration: none;
+	border-bottom: 1px dotted #333;
+	}
+	
+#content a:hover, #content a:active,
+#breadcrumb a:hover, #breadcrumb a:active {
+	color: #08458c;
+	background-color: #ededed;
+	text-decoration: none;
+	border-bottom: 1px solid #08458c;
+	}
+	
+			
+/******* code to remove border around icons ***************/
+
+div.icon img {
+	border: 0;
+	}
+			
+div.icon a:link, 
+div.icon a:visited, 
+div.icon a:hover, 
+div.icon a:active {
+	text-decoration: none;
+	border: 0;
+	background-color: transparent;
+	}	
+
+#validation {
+	border-top: 1px dashed silver;
+	padding-top: 1em;
+	}
+	
+#validation img {
+	border: 0;
+	}
+			
+#validation a:link, 
+#validation a:visited, 
+#validation a:hover, 
+#validation a:active {
+	text-decoration: none;
+	border: 0;
+	background-color: transparent;
+	}
+	
+		
+
+	
+/********* columns on homepage ***********/
+	
+#column-left {
+	float: left;
+	width: 70%;
+	margin-left: 0;
+	margin-right: 1em;
+	padding-right: 1em;
+	border-right: 1px dashed #ccc;
+	}	
+	
+#column-right {
+	margin-left: 73%;
+	padding-left: 1em;
+	font-size: 0.9em;
+	line-height: 1.25em;
+	}
+		
+#valid {
+	clear: right;
+	text-align: center;
+	padding: 1em 0;
+	font-size: 0.8em;
+	}
+	
+#valid img {
+	border: 0;
+	}
+			
+#valid a:link, 
+#valid a:visited, 
+#valid a:hover, 
+#icon a:active {
+	text-decoration: none;
+	border: 0;
+	background-color: transparent;
+	}
+	
+	
+/***************** faculty pages ************************/
+	
+#content #left {
+	float: left;
+	width: 45%;
+	padding-left: 2em;		
+	}
+
+#content #right {
+	margin-left: 50%;	
+	}
+	
+#left h2, #left h3, #left h4, #right h2, #right h3, #right h4 {
+	color: #333;
+	background-color: #fff;
+	font-weight: bold;
+	}
+		
+#left h2, #right h2 {
+	margin-bottom: -.75em;
+	}	
+	
+				
+
+/************* breadcrumbs *****************/
+
+#breadcrumb {
+	font-size: 11px; 
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: #08458c;
+	background-color: inherit;
+	line-height: 3.2em;
+	}
+	
+#breadcrumb a  { 
+	color: #08458c;
+	background-color: inherit; 
+	}
+
+#breadcrumb a:visited, #breadcrumb a:active {
+	color: #08458c;
+	background-color: inherit;
+	}
+
+#breadcrumb ul,
+#breadcrumb li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	}
+	
+#breadcrumb ul {
+	list-style-type: none;
+	}
+
+
+/********* captions around images **********/
+	
+div.figure {
+	float: left;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	}
+	
+div.figure p {
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+	}
+	
+/***************** styles for sitemap ************************/
+
+.sitemap li {
+	  list-style: none; /* turns off bullets */
+	  background-image: none;
+	  }
+	 
+			
+.sitemap li ul {
+	 margin: 6px 15px;
+	 padding: 0 15px;
+	 border-left: 1px dotted #999;
+	 }
+	
+	/* for third-level */
+	
+.sitemap li ul li ul {
+	  border: none;
+	  }
+	
+.sitemap li ul li ul li  { 
+	font-weight: normal; 
+	background: url("../images/li_bull.gif") no-repeat 0 50%; 
+	padding-left: 16px 
+	}
+	
+/************ horizontal menu on acquisitions ******************/
+
+ ul#navlist, ul#navlist1 {
+	margin-left: 15%;
+	margin-bottom: 2em;
+	padding-left: 0;
+	white-space: nowrap;
+	font-family: verdana, arial, sans-serif;
+	font-size: .8em;
+	}
+
+#navlist li, #navlist1 li {
+	display: inline;
+	list-style-type: none;
+	}
+
+#navlist a, #navlist1 a { 
+	padding: 3px 10px; 
+	}
+
+#navlist a:link, #navlist a:visited, #navlist1 a:link, #navlist1 a:visited {
+	color: #fff;
+	background-color: #9e2628;
+	text-decoration: none;
+	}
+
+#navlist a:hover, #navlist a.current, #navlist1 a:hover, #navlist1 a.current {
+	color: #fff;
+	background-color: #585858;
+	text-decoration: none;
+	}
+		
+#navlist a.current, #navlist1 a.current {
+	color: #fff;
+	background-color: #585858;
+	}
+	
+		
+
+/************************************************/
+	
+h2 {
+	font-family: "trebuchet ms", verdana, arial, sans-serif;
+	color: #08458c;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.35em;
+	}
+	
+h3 {
+	font-family: "trebuchet ms", verdana, arial, sans-serif;
+	color: #333;
+	background-color: #fff;
+	font-weight: bold;
+	}
+	
+h3.blue {
+	font-family: "trebuchet ms", verdana, arial, sans-serif;
+	color: #08458c;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.25em;
+	}
+	
+ul.horiz {                      /* horizontal navbar for list of databases */
+	list-style-type: none;
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 1.1em;
+	padding: 5px;
+	text-align: center;
+	}
+	
+ul.horiz li {
+	display: inline;
+	}
+	
+ul.none {
+	list-style-type: none;
+	}
+	
+ul.square {
+	list-style-type: square;
+	}
+
+	
+.fancybullet ul {                   /* little bullet image */ 
+	list-style: none;
+	}
+	
+.fancybullet ul li {
+	background: url("../images/li_bull.gif") no-repeat 0 30%;
+	padding-left: 20px;
+	}
+	
+	
+dl dt {
+	font-size: 1.1em;
+	font-weight: bold;
+	}
+			
+dl dd {
+	margin-left: 2em;
+	padding: 5px 0px 15px 0px;	
+	}
+	
+/**************************** horizontal navbar *****************************/
+
+.basictab {
+	padding: 3px 0;
+	margin-left: 0;
+	font: bold 12px verdana;
+	border-bottom: 1px solid gray;
+	list-style-type: none;
+	text-align: center; 
+	}
+
+.basictab li{
+	display: inline;
+	margin: 0;
+	}
+
+.basictab li a:link, .basictab li a:visited  {
+	text-decoration: none;
+	padding: 3px 7px;
+	margin-right: 20px;
+	border: 1px solid gray;
+	border-bottom: none;
+	background-color: #ccc;
+	color: #333;
+	}
+
+.basictab li a:hover {
+	background-color: #333;
+	color: #fff;
+	}
+
+.basictab li a:active {
+	color: #fff;
+	}
+
+.basictab li.selected a { /*selected tab effect*/
+	position: relative;
+	top: 1px;
+	padding-top: 4px;
+	background-color: #ededed;
+	color: #820204;
+	}
+	
+	
+/******************* table style *******************/
+
+table.grid {
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-collapse: collapse;
+	}
+	
+table.grid th, table.grid td {
+	padding: 5px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	}
+	
+table.grid th {
+	color: #333;
+	background: #ccc;
+	}
+	
+table.grid td {
+	vertical-align: top;
+	line-height: 1.2em;
+	font-size: .8em;
+	}
+	
+table.grid tr.odd {
+	color: #000;
+	background-color: #eeeeef;
+	}
+	
+caption {
+	font-family: verdana, sans-serif;
+	color: #333;
+	background-color: #fff;
+	padding-bottom: 6px;
+	font-weight: bold;
+	font-size: 1em;
+	}
+	
+img.home {
+	width: 39px;
+	height: 33px;
+	border: 0px;
+	float: left;
+	}
+	
+img.users {
+	height: 30px;
+	width: 54px;
+	border: 0px;
+	}		
+	
+img.noborder {
+	border: 1px solid #fff;
+	width: 39px;
+	height: 33px;
+	}
+	
+img.users {
+	height: 30px;
+	width: 54px;
+	border: 0px;
+	}
+	
+img.up {
+	height: 13px;
+	width: 12px;
+	border: 0;
+	margin-right: 5px;
+	}	
+	
+.news {
+	color: #08458c;
+	background-color: #fff;
+	margin-bottom: 1em;
+	text-align: left; 
+	letter-spacing: 4px;
+	}
+	
+.space {
+	letter-spacing: 1.1px;
+	}
+	
+.textinput {
+	color: #333;
+	background-color: #ededed;
+	border: 1px solid #999;
+	}				
+	
+	
+.hiddenfromview {
+	display: none;
+	}
+	
+.blue {
+	color: #08458c;
+	background-color: #fff;
+	}
+	
+.question {
+	color: #08458c;
+	background-color: #fff;
+	font-weight: bold;
+	}
+		
+p.hang {
+	text-indent: -3em;
+	margin-left: 3em;
+	}
+	
+p.indent {
+	margin-left: 2em;
+	}
+	
+p.indent2 {
+	margin-left: 8em;
+	}
+
+p.indentboth {
+	margin-left: 4%;
+	margin-right: 4%;
+	color: #333;
+	background-color: #ededed;
+	}
+	
+.graybox {
+	margin: 1% 12%;
+	color: #333;
+	background-color: #ededed;
+	padding: 5px;
+	border: 1px silver solid;
+	}
+
+p.textindent {
+	text-indent: 3em;
+	}
+
+p.left {
+	margin-left: 2em;
+	}
+
+p.caption {
+	font-size: .75em; 
+	line-height: 1.2em;
+	}
+	
+.slogan {
+	font-size: 0.68em; 
+	font-variant: small-caps; 
+	letter-spacing: 3px;
+	}
+	
+.slogan1 {
+	font-size: 0.68em; 
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	}
+	
+.highlight {
+	color: #333;
+	background-color: #ffc;
+	font-weight: bold;
+	}
+
+.italic {
+	font-style: italic;
+	font-weight: bold; 	
+	}
+
+.underscore {	
+	text-decoration: underline;
+	font-weight: bold; 	
+	}
+
+.clear {
+	clear: both;
+	}
+	
+.left {
+	clear: left;
+	}
+	
+.right {
+	clear: right;
+	}
+	
+.center {
+	text-align: center;
+	}
+	
+.right-align {
+	text-align: right;
+	}
+
+abbr, acronym, dfn {
+	font-style: normal;
+	border-bottom: 1px dotted gray;
+}
+			
+abbr {
+	speak: spell-out;
+	}
+			
+acronym {
+	speak: normal;
+}
+
+
+
+/******** start of ACIT styles ************/
+
+.Categorytext {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 22px; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #000000; 
+	text-decoration: none; 
+}
+.titletext {
+	font-family: "trebuchet ms", "lucida grande", arial, helvetica, sans-serif; 
+	font-size: 22px; 
+	font-style: normal; 
+	font-weight: bold; 
+	color: #333; 
+	text-decoration: none; 
+}
+.navtext {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #ffffff; 
+	text-decoration: none; 
+}
+.navtext2 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #000000; 
+	text-decoration: none; 
+}
+.navtext3 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-style: italic; 
+	font-weight: normal; 
+	color: #000000; 
+	text-decoration: none; 
+}
+.text1 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-style: normal; 
+	font-weight: normal; 
+	color: #ffffff; 
+	text-decoration: none; 
+}
+.text3{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 16px; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #cc0000; 
+	text-decoration: none; 
+}
+.text4{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 20px; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #000000; 
+	text-decoration: none; 
+	background-color:#CCCCCC;
+}
+.faqquestion{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #000000; 
+	text-decoration: none; 
+	background-color:#CCCCCC;
+}
+.text10{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: .92em; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #000000; 
+	text-decoration: none; 
+	background-color:#CCCCCC;
+}
+.faqanswer{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 13px; 
+	font-style: normal; 
+	font-weight: normal; 
+	color: #000000; 
+	text-decoration: none; 
+	background-color:#CCCCCC;
+}
+.text5 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-style: normal; 
+	font-weight: bold; 
+	color: #000000; 
+	text-decoration: none; 
+}
+.modifiedtxt {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-weight: bold; 
+	font-weight: bold; 
+	color: #000000; 
+	text-decoration: none; 
+}
+.smalltxt {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: .58em; 
+	font-weight: bold; 
+	font-weight: bold; 
+	color: #000000; 
+	text-decoration: none; 
+}
+.steptext2 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-style: normal; 
+	font-weight: bold; 
+	color: #ffffff; 
+	text-decoration: none; 
+}
+.text8 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 16px; 
+	font-style: normal; 
+	font-weight: bold; 
+	color: #000000; 
+	text-decoration: none; 
+}
+.text6 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 20px; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #00ccff; 
+	text-decoration: none; 
+}
+.text7 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #00ccff; 
+	text-decoration: none; 
+}
+.text9 {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-style: normal; 
+	font-weight: bold; 
+	color: #eeeeee; 
+	text-decoration: none; 
+}
+.box {
+	BORDER-RIGHT: #990000 2px solid; BORDER-TOP: #990000 2px solid; BACKGROUND: #ffffff; BORDER-LEFT: #990000 2px solid; COLOR: #000000; BORDER-BOTTOM: #990000 2px solid
+}
+.navtdbkground{
+border-right: 1px #000000 solid;
+border-left: 1px #000000 solid;
+background-color:#666666;
+}
+.redtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #CC0000;
+}
+
+a.linkcolor2:link { color: #000000; font-size: 14px; font-family:Verdana, Arial, Helvetica, sans-serif;	font-weight: bold;  text-decoration: underline; background-color: transparent; cursor: pointer;}
+a.linkcolor2:visited { color:#000000; font-size: 14px; font-family: Verdana, Arial, Helvetica, sans-serif;	font-weight: bold;  text-decoration: underline; background-color: transparent; cursor: pointer;}
+a.linkcolor2:hover { color: #cc0000; font-size: 14px; font-family: Verdana, Arial, Helvetica, sans-serif;	font-weight: bold;  text-decoration: none; background-color: transparent; cursor: pointer;}
+a.linkcolor2:active { color: #cc0000; font-size: 14px; font-family: Verdana, Arial, Helvetica, sans-serif;	font-weight: bold;  text-decoration: underline; background-color: transparent; cursor: pointer;}
+
+
+a.linkcolor4:link { color: #cc0000; font-size: .77em; font-family:Verdana, Arial, Helvetica, sans-serif;	font-weight: bold;  text-decoration: underline; background-color: transparent; cursor: pointer;}
+a.linkcolor4:visited { color:#cc0000; font-size: .77em; font-family: Verdana, Arial, Helvetica, sans-serif;	font-weight: bold;  text-decoration: underline; background-color: transparent; cursor: pointer;}
+a.linkcolor4:hover { color: #000000; font-size: .77em; font-family: Verdana, Arial, Helvetica, sans-serif;	font-weight: bold;  text-decoration: none; background-color: transparent; cursor: pointer;}
+a.linkcolor4:active { color: #cc0000; font-size: .77em; font-family: Verdana, Arial, Helvetica, sans-serif;	font-weight: bold;  text-decoration: underline; background-color: transparent; cursor: pointer;}
+
+a.linkcolor3:link {
+color : #ffcc33; 
+font-size : 14px; 
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-weight : bold; 
+text-decoration : underline; 
+background-color : transparent; 
+cursor : pointer; 
+text-indent : 4px; 
+} 
+a.linkcolor3:visited {
+color : #ffcc33; 
+font-size : 14px; 
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-weight : bold; 
+text-decoration : underline; 
+background-color : transparent; 
+cursor : pointer; 
+text-indent : 4px; 
+} 
+a.linkcolor3:hover {
+color : #ffffff; 
+font-size : 14px; 
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-weight : bold; 
+text-decoration : none; 
+background-color : transparent; 
+cursor : pointer; 
+text-indent : 4px; 
+} 
+a.linkcolor3:active {
+color : #000000; 
+font-size : 14px; 
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-weight : bold; 
+text-decoration : underline; 
+background-color : transparent; 
+cursor : pointer; 
+text-indent : 4px; 
+} 
+.style4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffcc33;
+	font-style: italic;
+}
+.style5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffcc33;
+	font-style: italic;
+}
+.style6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #00ff66;
+	font-style: italic;
+}
+.steptext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .85em;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+}
+.required {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	color: #CC0000;
+}
+.submitmessage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #0000FF;
+}
+.paragraphred {
+font-family : Arial, Helvetica, sans-serif; 
+font-size : 0.92em; 
+font-style : normal; 
+font-weight : normal; 
+color : #cc0000; 
+text-decoration : none; 
+} 

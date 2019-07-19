@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* menu testing */
+
+#nav_container {
+	background-color: #666;
+	background-color: #a30d01;
+		background-color: #cc0000;
+	background-color: #666;
+	/*background-color: #567;*/
+	height: 25px;
+	border-top: 2px solid #a30d01;
+	border-top: 2px solid #555;
+}
+
+#nav {
+	z-index: 90;
+}
+
+
+#nav > .grid_7 {
+	z-index: 80;
+}
+
+ul#mega li a.head-link { letter-spacing: 1px;}
+/*#topnav a:hover {
+	background: #555;
+	width: 90px;
+}*/
+
+/*#topnav li.first {
+	border-left-width: 0;
+	padding-left: 0;
+	margin-left: 0;
+}*/
+
+
+/* styling for the top 4 nav links */
+ul#mega {
+	font-size: 12px;
+	list-style: none;
+	margin: 0; padding: 0;
+	float:left;
+	width: 100%;
+	list-style: none;
+/*	font-size: 1.1em*/;
+}
+
+ul#mega li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+ul#mega li a {
+	float: left;
+	 text-align: center;
+	text-decoration: none; !important;
+    text-transform: uppercase;
+	font-size: 11px;
+	color: #fff; 
+	border-right: 1px solid #777;
+	border-right: 1px solid #a30d01;
+	border-right: 1px solid #555;
+	display: inline-block;
+	width: 90px;
+}
+
+ul#mega li a:hover {
+	/* background: #a30d01;
+	background: #555; */
+	width: 90px;
+	background: #777;
+}
+
+ul#mega li:hover a, ul#mega li a:hover { background-position: left bottom; }
+
+
+/* styling for the submenus */
+ul#mega li .sub {
+	position: absolute;
+	top: 25px; left: -1px;
+	z-index: 1000;
+	/* background: #f7f6ee; */
+	background-color: white;
+	float: left;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	display: none;
+	border-left: 2px solid #666;
+	border-right: 2px solid #666;
+	border-bottom: 2px solid #666;
+	/*min-width: 500px;
+*/}
+
+ul#mega li.first .sub {
+	left: 0;
+}
+
+ul#mega li .row {
+	clear: both;
+	float: left;
+	width: 100%;
+/*	margin-bottom: 10px;
+		padding: 15px 10px 10px 20px;*/
+}
+
+ul#mega li .top {
+	padding: 15px 10px 10px 20px;
+}
+
+ul#mega li .bottom {
+	background: #ccc;
+	/* background: #e3e3db; */
+	/*padding: 0 10px 0 10px;*/
+	font-size: 11px;
+}
+
+ul#mega li .bottom a {
+	/* background: #e3e3db; */
+	padding-left: 10px;
+	display: inline;
+	color: red;
+	text-align: left;
+	float: none;
+	text-transform: none;
+	width: auto;
+	border: none;
+	color: #155F83;
+	margin: 0;
+	padding: 0;
+}
+
+ul#mega li .bottom p {
+	padding: 10px;
+}
+
+ul#mega li .bottom a.more {
+	float: right;
+}
+
+
+ul#mega li .sub ul {
+	list-style:none;
+	margin: 0; padding: 0;
+	float: left;
+	width: 180px;
+}
+
+ul#mega .sub ul li {
+/*	width: 100%;
+	clear: left;*/
+	width: 100%; /*--Override parent list item--*/
+	color: #fff;
+
+}
+
+ul#mega .sub ul li a {
+	float: none;
+	text-indent: 0;
+	height: auto;
+	padding: 0;
+	text-transform: none;
+	display: block;
+/*	color: #155F83;*/
+/*	color: #4C83AF;*/
+	color: #4C83AF;
+	text-align: left;
+	border-width: 0;
+	font-size: 12px;
+	width: 150px;
+	border-bottom: 1px dotted #ccc;
+}
+
+ul#mega .sub ul li a:hover {
+	background-color: transparent;
+	text-decoration: none;
+	background-color: #eee;
+		color: #004276;
+}
+
+ul#mega .sub .sublinks a {
+	float: none;
+	text-indent: 0;
+	height: auto;
+	width: auto;
+	text-transform: none;
+	display: inline;
+	color: #155F83;
+	color: #4C83AF;
+	text-align: left;
+	border-width: 0;
+	font-size: 11px;
+	margin-left: 10px;
+	padding: 0;
+}
+
+ul#mega .sub ul.menu-feature .caption {
+	float: left;
+	text-indent: 0;
+	height: auto;
+	padding: 0;
+	text-transform: none;
+	display: inline;
+	color: #666;
+	text-align: left;
+	border-width: 0;
+	font-size: 11px;
+	border-bottom: none;
+	padding-left: 10px;
+	width: 130px;
+	line-height: 110%;
+}
+
+ul.menu-feature img {
+	padding: 5px;
+	border: 1px solid #dcdcdc;
+	margin-left: 10px;
+}
+
+ul#mega .sub ul.menu-feature a {
+	float: none;
+	text-indent: 0;
+	height: auto;
+	padding: 0;
+	text-transform: none;
+	display: inline;
+	color: #155F83;
+	text-align: left;
+	border-width: 0;
+	font-size: 11px;
+	border-bottom: none;
+}
+
+ul#mega .sub ul.menu-feature a:hover {
+	background: none;
+}
+
+
+/*ul#mega li .sub li {
+	white-space: nowrap;
+}
+
+ul#mega li .sub li a {
+	font-size: 12px;
+	border-width: 0;
+	text-align: left;
+	color: #155F83;
+	text-transform: capitalize;
+	border-bottom: 1px dotted #ccc;
+	display: block;
+}
+
+ul#mega li .sub li a:hover {
+	background-color: transparent;
+	text-decoration: underline;
+}
+*/
+.leaf {
+	/*display: block;*/
+}
+
+.sub-help {
+	font-size: 11px;
+/*	margin-left: 30px;
+	display: inline;*/
+}
+
+.sub-help a {
+	padding: 0;
+}
+
+.sub {
+/*	font-size: .9em;
+*/	/*border: 2px solid #A30D01;
+    border: 2px solid #666;
+	border-width: 0 2px 2px 2px;*/
+}
+
+ul#mega li ul.menu-feature li {
+	/*text-align: center;
+	white-space: normal;*/
+}
+
+ul#mega li ul.menu-feature {
+	/*width: 100px;
+*/}

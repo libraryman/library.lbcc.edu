@@ -1,0 +1,430 @@
+/* Style sheet for Lib 1 media="screen" */
+/* File name is main.css */
+
+
+
+body {
+margin: 0;
+padding: 0;
+font-family: verdana, arial, helvetica, sans-serif;
+color: #000;
+background-color: #fff;
+}
+
+/* Banner across top of page that says the name of the whole site */
+
+#main-title {
+margin: 0;
+padding: 17px 80px 17px 0px;
+color: #00514a;
+background-color: #bacdc7;
+font-weight: bold;
+font-size: .9em;
+text-align: right;
+letter-spacing: 5px;
+border-bottom: 5px #00514a solid;
+}
+
+/* Heading level 1 is not contained in main-text. */
+
+h1 {
+margin: 0px 0px 15px 0px;
+padding: 7px 0px 10px 190px;
+font-size: 1em;
+color: #fff;
+background-color: #f30;
+font-weight: bold;
+border-top: 5px #00514a solid;
+letter-spacing: 5px;
+border-bottom: 2px #00514a solid;
+}
+
+/* Styles for the main text on the page. */
+
+#main-text {
+margin-bottom: 50px;
+margin-left: 195px;
+margin-right: 50px;
+
+}
+
+p, ul, ol, table {
+font-size: .8em;
+line-height: 1.5em;
+margin-top: 0;
+margin-bottom: 17px;
+margin-left: 0;
+margin-right: 0;
+padding: 0;
+}
+
+#main-text ul.square {
+list-style-type: square;
+}
+
+#main-text ul.none {
+list-style-type: none;
+}
+
+#main-text ul li, #main-text ol li {
+font-size: 1em;
+margin-bottom: 10px;
+}
+
+#main-text #citation {
+color: #000; 
+background-color: #ededed; 
+padding: 14px 7px 0px 7px; 
+border: 1px solid silver; 
+margin-bottom: 10px;
+}
+
+p.hang {
+text-indent: -3em;
+margin-left: 3em;
+}
+
+p.validation {
+text-align: center;
+}
+
+p.validation img {
+border: 0;
+}
+
+.right {
+float: right;
+text-align: right;
+}
+
+
+.highlight {
+color: #000;
+background-color: #ff9;
+padding: 6px;
+}
+
+.weekend {
+color: #000;
+background-color: #ffc;
+}
+
+.odd {
+background-color: #bacdc7; /* Class declared for alternate rows of color used in tables */
+color: #000;
+}
+
+p.box {
+color: #333; 
+background-color: #ededed;
+font-weight: bold; 
+border: 1px solid silver; 
+padding: 7px;
+}
+	
+td.example {
+padding: 4px 4px 4px 4px;
+color: #333;
+background-color: #ededed;
+font-size: 1em;
+font-weight: bold;
+}
+
+td.example2 {
+padding: 4px;
+color: #fff;
+background-color: #00514a;
+font-size: 1em;
+font-weight: bold;
+}
+
+
+h2 {
+margin-top: 0;
+margin-bottom: 15px;
+margin-left: 0;
+margin-right: 0;
+padding: 0;
+font-size: 1em;
+color: #00514a;
+background-color: #fff;
+font-weight: bold;
+}
+
+h3 {
+margin: 10px 0px;
+margin-bottom: 10px;
+margin-left: 0;
+margin-right: 0;
+padding: 5px;
+font-size: .9em;
+color: #000;
+background-color: #bacdc7;
+font-weight: bold;
+}
+
+h4 {
+margin-top: 0;
+margin-bottom: 10px;
+margin-left: 0;
+margin-right: 0;
+padding: 0;
+font-size: .9em;
+color: #00514a;
+background-color: #fff;
+font-weight: bold;
+}
+
+h5 {
+margin: 10px 0px 10px 0px;
+padding: 5px;
+font-size: .8em;
+color: #000;
+background-color: #ededed;
+font-weight: bold;
+}
+
+abbr, acronym, dfn {
+font-style: normal;
+border-bottom: 1px dotted gray;
+}
+
+img.validation {
+border: 0;
+}
+
+
+.practices {
+color: #f30; 
+background-color: #fff; 
+font-weight: bold;
+}
+
+ol, ul {
+margin-left: 25px;
+}
+
+a:link, a:visited {
+color: #f30;
+text-decoration: underline;
+font-weight: bold;
+}
+
+a:hover {
+color: #00514a;
+text-decoration: underline;
+font-weight: bold;
+}
+
+/***************************  Styles for external links **********************/
+
+a[href^="http:"] {
+  background: url(../images/externalLink.gif) no-repeat right top;
+  padding-right: 10px;
+}
+
+a[href^="http://coursepages.lbcc.edu"],
+a[href^="http://voyager.lbcc.edu"],  
+a[href^="http://forums.lbcc.edu"], 
+a[href^="http://de.lbcc.edu"],
+a[href^="http://itdc.lbcc.edu"],
+a[href^="http://lib.lbcc.edu"],
+a[href^="http://www.lbcc.edu"],
+a[href^="#"]   
+{
+  background-image: none;
+  padding-right: 0;
+}
+
+a[href^="mailto:"] {
+  background: url(../images/email.png) no-repeat right top;
+  padding-right: 15px;
+}
+
+a[href^="aim:"] {
+  background: url(../images/im.png) no-repeat right top;
+  padding-right: 15px;
+}
+
+abbr, acronym, dfn {
+font-style: normal;
+border-bottom: 1px dotted gray;
+}
+			
+abbr {
+speak: spell-out;
+}
+			
+acronym {
+speak: normal;
+}
+
+
+/* Styles for calendars */
+
+#calendar {
+line-height: 1em;
+}
+
+	
+#calendar table {
+margin-left: 0; 
+width: 96%; 
+border: 1px solid #000;
+border-collapse: collapse;
+}
+
+#calendar td {
+height: 50px;
+width: 100px;
+vertical-align: top;
+border: 1px solid #000;
+padding: 3px;
+}
+
+#calendar th {
+border: 1px solid #000;
+}
+
+#calendar th.month {
+color: #fff;
+background-color: #00514a;
+font-size: 1.1em;
+}
+
+#calendar td.holiday {
+color: #000;
+background-color: #ededed;
+} 
+
+#calendar p {
+font-size: .9em;
+line-height: 1.1em;
+color: #333;
+background: transparent;
+text-align: right;
+}
+
+#calendar a:link, #calendar a:visited, #calendar a:hover {
+color: inherit;
+background-color: #fff;
+text-decoration: none;
+}
+
+#table-calendar, #table-calendar ul {
+font-size: .8em;
+line-height: 1.2em;
+margin: 0;
+padding: 0;
+}
+
+
+/* Styles for rollover arrows on calendars */
+
+#arrow {
+margin-left: 32%;
+}
+
+#arrow a:link, #arrow a:visited, #arrow a:hover {
+color: inherit;
+background-color: #fff;
+text-decoration: none;
+}
+
+#arrow img {
+border: 0px;
+width: 56px;
+height: 40px;
+}
+
+
+/* Styles for print media */
+
+#url {
+display: none;
+}
+
+#footer-print {
+display: none;
+}
+
+
+
+/* Styles for the navbar on the left side. */
+
+#left-menu {
+position: absolute;
+top: 70px;
+left: 0;
+width: 165px;
+text-align: right;
+background-color: #00514a;
+border-bottom: 2px #f30 solid;
+border-right: 2px #f30 solid;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+#left-menu p {
+margin-bottom: 0;
+border-bottom: 2px #f30 solid;
+font-size: .8em;
+line-height: 25px;
+}
+
+
+#left-menu a:link, #left-menu a:visited {
+color: #fff;
+text-decoration: none;
+}
+
+#left-menu a:hover, #left-menu a.current {
+color: #f30;
+text-decoration: none;
+}
+
+
+.teal {
+color: #00514a;
+background-color: #00514a;
+}
+
+
+#e-zteach {
+position: absolute;
+top: 640px;
+left: 0;
+text-align: left;
+font-size: .7em;
+background-color: #fff;
+color: #00514a;
+padding-top: 20px;
+padding-left: 20px;
+}
+
+
+/* Styles for the footer at the bottom of the page */
+
+#footer {
+text-align: right;
+color: #454f56;
+margin-bottom: 0;
+padding-top: 7px;
+padding-bottom: 7px;
+border-top: 1px #f30 solid;
+font-size: .7em;
+font-weight: bold;
+padding-right: 50px;
+}
+
+#footer a:link, #footer a:visited {
+color: #f30;
+}
+
+#footer a:hover {
+color: #454f56;
+}
+
+
+
+/* End of Lib 1 style sheet */

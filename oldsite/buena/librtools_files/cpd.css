@@ -1,0 +1,141 @@
+.homeback {
+	COLOR: #000000; BACKGROUND-COLOR: #336666
+}
+.nav {
+	COLOR: #ffffff; BACKGROUND-COLOR: #336666
+}
+.navdark {
+	COLOR: #ffffff; BACKGROUND-COLOR: #2a5454
+}
+A {
+	FONT-SIZE: 10px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 10px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 10px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.heavy {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.heavy:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.heavy:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.homebox {
+	FONT-SIZE: 10px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.homebox:visited {
+	FONT-SIZE: 10px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.homebox:hover {
+	FONT-SIZE: 10px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.small {
+	FONT-SIZE: 9px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+A.small:visited {
+	FONT-SIZE: 9px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+A.small:hover {
+	FONT-SIZE: 9px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-BOTTOM: 5px; COLOR: #336666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.submitter {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: arial, Helvetica, sans-serif; BACKGROUND-COLOR: #336666
+}
+BODY {
+	FONT-SIZE: 10px; MARGIN: 10px; COLOR: black; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+P {
+	FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+A.whitelink {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.whitelink:visited {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.whitelink:hover {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+IMG {
+	DISPLAY: block; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+FORM {
+	MARGIN-BOTTOM: 1px
+}
+SELECT {
+	FONT-SIZE: 10px; COLOR: #333333; FONT-FAMILY: "Courier New", Courier, monospace
+}
+OPTION {
+	FONT-SIZE: 10px; COLOR: #333333; FONT-FAMILY: "Courier New", Courier, monospace
+}
+.navsub {
+	FONT-WEIGHT: bold; BACKGROUND: #bfbfbf; COLOR: #000000
+}
+.navsublight {
+	BACKGROUND: #e2e2e2; COLOR: #000000
+}
+.homebox {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #cccccc
+}
+.whitetext {
+	FONT-SIZE: 9px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.whitetextbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.instructions {
+	FONT-SIZE: 9px; COLOR: #333333; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.error {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: red; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.redtext {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ff0000; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.boldtext {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.subheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.smalltext {
+	FONT-SIZE: 9px; COLOR: #000000; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.smallgraytext {
+	FONT-SIZE: 9px; COLOR: #696969; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.inline {
+	BORDER-TOP-WIDTH: 0px; DISPLAY: inline; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.titleimage {
+	MARGIN-TOP: 10px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.podtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: verdana, arial, Helvetica, sans-serif
+}
+.hilighter {
+	BACKGROUND-COLOR: #ffff99
+}
+.frmfield {
+	FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: "Courier New", Courier, monospace; BACKGROUND-COLOR: #ffffff
+}
+.frmtext {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-ALIGN: right
+}
+.frmtextrequired {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, Helvetica, sans-serif; TEXT-ALIGN: right
+}
+.maintable {
+	BORDER-RIGHT: #2a5454 1px solid; BORDER-TOP: #2a5454 1px solid; BORDER-LEFT: #2a5454 1px solid; BORDER-BOTTOM: #2a5454 1px solid; BACKGROUND-COLOR: #f6f6f6
+}

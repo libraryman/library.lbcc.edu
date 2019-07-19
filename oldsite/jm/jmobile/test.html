@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Long Beach City College Libraries</title>
+
+  <link rel="stylesheet" href="css/lbcc.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="js/j_m/jquery.mobile.structure-1.4.3.min.css" /> 
+  <script src="js/jquery-1.11.1.min.js"></script> 
+  <script src="js/j_m/jquery.mobile-1.4.3.min.js"></script>
+    <script src="openclosed.js"></script>  
+<script>
+
+$(function() {
+    if ($.inArray(dayOfYear,closed)) {
+            $("#hours").html("<h1>The Library is Open Today</h1>"); 
+            alert(thisDay);
+        }
+/*
+    
+    function onLoad() {
+        document.addEventListener("online", onOnline, false);
+        document.addEventListener("offline", onOffline, false);
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+ 
+    // Cordova is loaded and it is now safe to make calls Cordova methods
+    //
+    function onDeviceReady() {
+        console.log("onDeviceReady");
+        alert("We're ready ;{}");
+    }
+ 
+    // Handle the online event
+    //
+    function onOnline() {
+        //$("#hours").load("http://lib.lbcc.edu/displayhours.cfm");
+        alert("We're online :)");
+    }
+ 
+    function onOffline() {
+        //$("#hours").html("<h1>Not Online Fool!</h1>");
+        alert("We're offline :(");
+    }
+*/
+});
+    
+
+</script>
+
+</head>
+<body>
+
+
+<div style="" class="ui-footer ui-bar-a ui-footer-fixed" data-role="footer" data-position="fixed" data-theme="a">
+		<div role="navigation" class="ui-navbar  ui-state-persist" data-role="navbar">
+			<ul class="ui-grid-c">
+				<li class="ui-block-a"><a class="ui-btn" href="#page1" data-prefetch="true" data-transition="fade">Home</a></li>
+				<li class="ui-block-b"><a class="ui-btn" href="#page2" data-prefetch="true" data-transition="fade">LAC Campus</a></li>
+                <li class="ui-block-b"><a class="ui-btn" href="#page2" data-prefetch="true" data-transition="fade">PCC Campus</a></li>
+				<li class="ui-block-c"><a class="ui-btn" href="#page3" data-prefetch="true" data-transition="fade">Borrowing</a></li>
+				
+			</ul>
+		</div><!-- /navbar -->
+</div>
+  <div data-role="page" data-title="Home" id="page1">
+
+        <div data-role="header" class="ui-header ui-header-fixed" data-title="search" data-theme="a" data-position="fixed">
+                <h3>
+              Long Beach City College Libraries
+          </h3>
+          <form action="http://lbcc.beta.worldcat.org/?">
+              
+                <div class="ui-field-contain">
+                    <input type="hidden" value="" name="databaseList">
+                    <input name="queryString" id="search" value="" placeholder="start your search here..." type="search">
+
+              </div>
+             
+                  <input data-inline="true" data-theme="d" value="Submit" data-mini="true"
+                  type="submit">
+                  <a class="ui-link" id="advancedsearchlink" href="http://lbcc.beta.worldcat.org/advancedsearch?databaseList=">
+                      Advanced Options
+                  </a>
+          </form>
+
+
+   </div> 
+<script>
+//Please make sure all the variables below are correct
+     var la_iid = 30; //your system id (required)
+     var la_domain = 'lbcc.libanswers.com'; //your system domain (no http:// no ending slash) (required)
+     var la_featured = ''; //ids for featured question list (optional)
+     var la_top_options = '1,50,0,1,150,90'; //type (0=cloud, 1=dropdwon), max number of topics, show count (0=no 1=yes), sort (0=count 1=name), max size(%), min size(%) // fill in with 0 for unused variables //optional leave empty for no topic display
+     var la_css = 1; //use our stylesheet yes/no
+     var la_noresults = ''; //show a "no results" message in the autocomplete
+     var la_win = ''; //where to open links default is the current window
+</script>
+<script src="js/widget.min.js"></script>
+
+<!-- Start LibAnswers Widget -->
+<div id=la_widget>
+     <!-- the la_popdiv can be moved elsewhere on the page and will still function -->
+     <div id=la_popdiv>
+          <div id=la_popfeat><a id=la_poplink href="#">Popular</a> | <a id=la_featlink href="#">Featured</a></div>
+          <br style="clear:both;"/>
+          <ul id=la_poplist class="ui-widget ui-autocomplete ui-widget-content ui-menu ui-corner-all" style="display: none;"></ul>
+          <ul id=la_featlist class="ui-widget ui-autocomplete ui-widget-content ui-menu ui-corner-all" style="display: none;"></ul>
+     </div> <!-- end la_popdiv -->
+
+     <form method=post name=la_qform id=la_qform action="http://lbcc.libanswers.com/search.php" style="display:inline; margin:0; padding:0;">
+          <input type=hidden name=iid value="30" />
+          <input type=hidden name=src value="4" />
+          <label for=la_qentry class=sreader_hide>Ask a Question: </label>
+          <div class=ui-widget>
+               <input id=la_qentry name=question value=""/>
+               <button id=la_qformbutton type=submit title="Ask Us">Ask Us</button>
+          </div>
+     </form>
+
+     <!-- the la_topdiv can be moved elsewhere on the page and will still function -->
+     <div id=la_topdiv><span id=la_topintro>Or browse a topic: </span></div>
+
+</div>
+<!-- end widget -->
+              <hr> 
+          <div id="hours">
+
+              <p>
+                  <b>
+                     The Library is closed today.
+                  </b>
+              </p>
+              <hr>
+              </div>
+
+      </div>
+
+  </div>
+  <div data-role="page" data-title="Locations" id="page2")>
+    <div data-role="header" class="ui-header ui-header-fixed" data-title="search" data-theme="a" data-position="fixed">
+                <h3>
+              LBCC Libraries
+          </h3>
+          <form action="http://lbcc.beta.worldcat.org/?">
+              
+                <div class="ui-field-contain">
+                    <input type="hidden" value="" name="databaseList">
+                    <input name="queryString" id="search" value="" placeholder="start your search here..." type="search">
+
+              </div>
+             
+                  <input data-inline="true" data-theme="d" value="Submit" data-mini="true"
+                  type="submit">
+                  <a class="ui-link" id="advancedsearchlink" href="http://lbcc.beta.worldcat.org/advancedsearch?databaseList=">
+                      Advanced Options
+                  </a>
+          </form>
+
+   </div> 
+      <div data-role="content">
+
+        <div style="" data-controltype="image">
+            <img style="width: 248px; height: 75px" src="images/library_header.png">
+
+        </div>
+        <h2>
+            Liberal Arts Campus
+        </h2>
+        <div data-controltype="textblock">
+            <p>
+                <em>
+                    <strong>
+                        Summer Hours:
+                    </strong>
+                </em>
+            </p>
+            <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                <b>
+                    Mon-Thu: 7am-9pm
+                    <br>
+                </b>
+            </p>
+            <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                <b>
+                    Fri-Sun: CLOSED
+                    <br>
+                </b>
+            </p>
+            <p>
+                <b>
+                    <b>
+                        <em>
+                            Location:
+                        </em>
+                    </b>
+                </b>
+            </p>
+            <p>
+                <b>
+                    4901 E. E. Carson Street
+                    <br>
+                </b>
+            </p>
+            <p>
+                <b>
+                    Long Beach California, 90808
+                    <br>
+                </b>
+            </p>
+            <p>
+                <a href="tel:15629834232" data-mce-href="tel:15629834232">
+                    <b>
+                        CALL NOW: (562) 983-4232
+                    </b>
+                </a>
+                <br>
+            </p>
+        </div>
+        <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+        <div id="googlemapsjs2" class="google-map" style="width: 288px; height: 200px; margin-left: auto; margin-right: auto">
+        </div>
+        <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    Campus Directions:
+                    <br>
+                </b>
+            </p>
+            <p>
+                <strong>
+                    The library is located in Building L (circled in red on the map above),
+                    which is north of Carson Street and off of Faculty Avenue. The entrance
+                    to the library is on the east side, facing the lawn area.
+                </strong>
+                <br>
+                <br>
+                <strong>
+                    Student parking is available in Lots D, E, F, G and H.
+                </strong>
+            </p>
+        </div>
+        <div style="" data-controltype="image">
+            <img style="width: 288px; height: 200px" src="images/lacmap.jpg">
+        </div>
+       <div style="" data-controltype="image">
+            <img style="width: 300px; height: 70px" src="images/library_header.png">
+        </div>
+    </div>
+          
+          
+          
+          </div>
+      </div>
+
+  </div>
+
+  <div data-role="page" data-title="PCC Campus" id="page3")>
+    <div data-role="header" class="ui-header ui-header-fixed" data-title="search" data-theme="a" data-position="fixed">
+                <h3>
+              LBCC Libraries
+          </h3>
+          <form action="http://lbcc.beta.worldcat.org/?">
+              
+                <div class="ui-field-contain">
+                    <input type="hidden" value="" name="databaseList">
+                    <input name="queryString" id="search" value="" placeholder="start your search here..." type="search">
+
+              </div>
+             
+                  <input data-inline="true" data-theme="d" value="Submit" data-mini="true"
+                  type="submit">
+                  <a class="ui-link" id="advancedsearchlink" href="http://lbcc.beta.worldcat.org/advancedsearch?databaseList=">
+                      Advanced Options
+                  </a>
+          </form>
+
+   </div> 
+      <div data-role="content">
+
+    <div style=" text-align:center" data-controltype="image">
+            <img style="width: 300px; height: 70px" src="images/library_header.png">
+        </div>
+        <h2>
+            Pacific Coast Campus
+        </h2>
+        <div data-controltype="textblock">
+            <p>
+                <em>
+                    <strong>
+                        Summer Hours:
+                    </strong>
+                </em>
+            </p>
+            <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                <b>
+                    Mon-Thu: 8am-9pm
+                    <br>
+                </b>
+            </p>
+            <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                <b>
+                    Fri-Sun: CLOSED
+                    <br>
+                </b>
+            </p>
+            <p>
+                <b>
+                    <b>
+                        <em>
+                            Location:
+                        </em>
+                    </b>
+                </b>
+            </p>
+            <p>
+                <b>
+                    1305 E. Pacific Coast Highway
+                    <br>
+                </b>
+            </p>
+            <p>
+                <b>
+                    Long Beach California, 90806
+                    <br>
+                </b>
+            </p>
+            <p>
+                <a href="tel:15629833028" data-mce-href="tel:15629833028">
+                    <b>
+                        CALL NOW: (562) 983-3028
+                    </b>
+                </a>
+                <br>
+            </p>
+        </div>
+        <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+        <div id="googlemapsjs1" class="google-map" style="width: 288px; height: 200px; margin-left: auto; margin-right: auto">
+        </div>
+        <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    Campus Directions:
+                    <br>
+                </b>
+            </p>
+            <p>
+                <b>
+                    The library is located in Building LL (circled in red on the map below),
+                    which is off of Pacific Coast Highway and May Avenue (between Orange and
+                    Walnut). The entrance to the library is on the north side of the building.
+                </b>
+            </p>
+        </div>
+        <div style="" data-controltype="image">
+            <img style="width: 288px; height: 200px" src="images/pccmap.jpg">
+        </div>
+        <div style="" data-controltype="image">
+            <img style="width: 300px; height: 70px" src="images/library_header.png">
+        </div>
+
+          
+          
+          
+          </div>
+      </div>
+
+  </div>
+  <div data-role="page" data-title="Borrowing" id="page4">
+    <div data-role="header" class="ui-header ui-header-fixed" data-title="search" data-theme="a" data-position="fixed">
+                <h3>
+              LBCC Libraries
+          </h3>
+          <form action="http://lbcc.beta.worldcat.org/?">
+              
+                <div class="ui-field-contain">
+                    <input type="hidden" value="" name="databaseList">
+                    <input name="queryString" id="search" value="" placeholder="start your search here..." type="search">
+
+              </div>
+             
+                  <input data-inline="true" data-theme="d" value="Submit" data-mini="true"
+                  type="submit">
+                  <a class="ui-link" id="advancedsearchlink" href="http://lbcc.beta.worldcat.org/advancedsearch?databaseList=">
+                      Advanced Options
+                  </a>
+          </form>
+
+   </div> 
+      <h2>
+              Borrowing Policies
+          </h2>
+      
+      <div data-role="listview">
+    
+          <li><a href="#page8">Books &amp; CD ROMs</a></li>
+          <li><a href="#page7">Periodicals (unbound)</a></li>
+          <li><a href="#page9">Music CDs</a></li>
+          <li><a href="#page10">Audio Books (Tapes and CDs)</a></li>
+          <li><a href="#page11">Movies (VHS &amp; DVD)</a></li>
+          <li><a href="#page12">College Catalog</a></li>
+          <li><a href="#page13">Reference Books</a></li>
+          <li><a href="#page13">Newspapers &amp; Bound Periodicals</a></li>
+          <li><a href="#page14">In-House Course Reserves</a></li>
+          <li><a href="#page15">Overnight Course Reserves</a></li>
+      </div>
+
+
+  <div data-role="panel" data-position="right" data-display="overlay" id="page8">
+      <div data-role="content" style="padding: %">
+ 
+          <h1>
+              Books &amp; CD ROMs
+          </h1>
+          <div data-controltype="textblock">
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                      <b>
+                          Loan Period: 21 days
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Limit: 20 (3 of the same call number)
+                      </span>
+                      <br>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Renewals: 2
+                          <br>
+                      </span>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Fine:
+                          <b>
+                              <span style="color: #808080;" data-mce-style="color: #808080;">
+                                  $.25/day
+                              </span>
+                          </b>
+                          <br>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+
+      
+  </div>
+  <div data-role="panel" data-position="right" data-display="overlay" id="page7">
+      <div data-role="content" style="padding: %">
+          <h1>
+              Periodicals (unbound)
+          </h1>
+          <div data-controltype="textblock">
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                      <b>
+                          Loan Period: 7 days
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Limit: 5 (2 of the same title)
+                      </span>
+                      <br>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Renewals: 0
+                          <br>
+                      </span>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Fine: $.10/day
+                          <br>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+
+    </div>
+  <div data-role="panel" data-position="right" data-display="overlay" id="page9">
+      <div data-role="content" style="padding: %">
+          <h1>
+              Music CDs
+          </h1>
+          <div data-controltype="textblock">
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                      <b>
+                          Loan Period: 7 days
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Limit: 3
+                      </span>
+                      <br>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Renewals: 0
+                          <br>
+                      </span>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Fine:
+                          <b>
+                              <span style="color: #808080;" data-mce-style="color: #808080;">
+                                  $.25/day
+                              </span>
+                          </b>
+                          <br>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+
+  </div>
+  <div data-role="panel" data-position="right" data-display="overlay" id="page10">
+      <div data-role="content" style="padding: %">
+          <h1>
+              Audio Books (tapes and CDs)
+          </h1>
+          <div data-controltype="textblock">
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                      <b>
+                          Loan Period: 7 days
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Limit: 2
+                      </span>
+                      <br>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Renewals: 0
+                          <br>
+                      </span>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Fine:
+                          <b>
+                              <span style="color: #808080;" data-mce-style="color: #808080;">
+                                  $.25/day
+                              </span>
+                          </b>
+                          <br>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+
+  </div>
+  <div data-role="panel" data-position="right" data-display="overlay" id="page11">
+      <div data-role="content" style="padding: %">
+          <h1>
+              Movies (VHS &amp; DVD)
+          </h1>
+          <div data-controltype="textblock">
+              <p style="margin-left: 30px;">
+                  <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                      <b>
+                          Loan Period: 21 days
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Limit: 20 (3 of the same call number)
+                      </span>
+                      <br>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Renewals: 2
+                          <br>
+                      </span>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Fine: 25 cents per day
+                          <br>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+
+    </div>
+  <div data-role="panel" data-position="right" data-display="overlay" id="page12">
+      <div data-role="content" style="padding: %">
+          <h1>
+              College Catalog
+          </h1>
+          <div data-controltype="textblock">
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                      <b>
+                          Loan Period: 1 day
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Limit: 2
+                      </span>
+                      <br>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Renewals: 0
+                          <br>
+                      </span>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Fine:
+                          <b>
+                              <span style="color: #808080;" data-mce-style="color: #808080;">
+                                  $.10/day
+                              </span>
+                          </b>
+                          <br>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+</div>
+  <div data-role="panel" data-position="right" data-display="overlay" id="page13">
+      <div data-role="content" style="padding: %">
+          <h1>
+              Reference Books, Newspapers, and Unbound Periodicals
+          </h1>
+          <div data-controltype="textblock">
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                      <b>
+                          Loan Period: non-circulating
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Limit: N/A
+                      </span>
+                      <br>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Renewals: N/A
+                          <br>
+                      </span>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Fine: N/A
+                          <br>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+
+  </div>
+  <div data-role="panel" data-position="right" data-display="overlay" id="page14">
+      <div data-role="content" style="padding: %">
+          <h1>
+              In House Course Reserves
+          </h1>
+          <div data-controltype="textblock">
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                      <b>
+                          Loan Period: Varies from 1-4hours
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Limit: 2
+                      </span>
+                      <br>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Renewals: 0
+                          <br>
+                      </span>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Fine:
+                          <b>
+                              <span style="color: #808080;" data-mce-style="color: #808080;">
+                                  $.10/hour
+                              </span>
+                          </b>
+                          <br>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+
+      
+  </div>
+  <div data-role="panel" data-position="right" data-display="overlay" id="page15">
+      <div data-role="content" style="padding: %">
+          <h1>
+              Overnight Course Textbook Reserves
+          </h1>
+          <div data-controltype="textblock">
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                      <b>
+                          Loan Period: varies
+                          <br>
+                      </b>
+                  </span>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Limit: 2
+                      </span>
+                      <br>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Renewals: 0
+                          <br>
+                      </span>
+                  </b>
+              </p>
+              <p style="margin-left: 30px;" data-mce-style="margin-left: 30px;">
+                  <b>
+                      <span style="color: rgb(128, 128, 128);" data-mce-style="color: #808080;">
+                          Fine:
+                          <b>
+                              <span style="color: #808080;" data-mce-style="color: #808080;">
+                                  $2.40/day
+                              </span>
+                          </b>
+                          <br>
+                      </span>
+                  </b>
+              </p>
+          </div>
+      </div>
+
+  </div>
+        </div>
+</body>
+</html>

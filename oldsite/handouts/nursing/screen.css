@@ -1,0 +1,233 @@
+/************* Style sheet for nursing ************/
+/************* Styles for screen ***********************/
+/************* file name is http://lib.lbcc.edu/handouts/nursing/screen.css ************/
+	
+			
+	html, body   { 
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		}
+			
+	body  { 
+		color: #333;
+		background-color: #697172; 
+		font-family: "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, arial, helvetica, sans-serif;
+		text-align: center;
+		}
+				
+	#container  {
+		color: #333; 
+		background-color: #fff;
+		border: 1px solid #afafaf;
+		border-color: #afafaf #5a5a5a #5a5a5a #afafaf; 
+		margin: 4% auto;
+		width: 92%;
+		max-width: 775px;
+		-moz-border-radius: 25px;
+		
+		}
+				
+	#exit {
+		float: right;
+		text-align: right;
+		font-size: 75%;
+		margin-top: 10px;
+		margin-right: 20px;
+		}		
+									
+	#main-text {
+		text-align: left;
+		line-height: 1.5em;
+		font-size: 85%;
+		padding: 0px 20px;
+		}		
+											
+	h1 {
+		color: #820204;
+		background-color: #fff;
+		font-family: "Trebuchet MS", "lucida grande", verdana, arial, sans-serif;
+		font-weight: bold;
+		text-align: center;
+		font-size: 120%;
+		letter-spacing: 3px;
+		margin-top: 15px;
+		margin-bottom: 2em;
+		}
+		
+	h1.title {
+		color: #820204;
+		background-color: #fff;
+		font-family: "Trebuchet MS", "lucida grande", verdana, arial, sans-serif;
+		font-weight: bold;
+		text-align: left;
+		font-size: 175%;
+		letter-spacing: 3px;
+		margin-top: 3em;
+		margin-bottom: 100px;
+		}
+		
+	h2 {
+		color: #333;
+		background-color: #fff;
+		font-family: "Trebuchet MS", "lucida grande", verdana, arial, sans-serif;
+		font-weight: bold;
+		text-align: center;
+		font-size: 140%;
+		}		
+		
+	ul.square {
+		list-style-type: square;
+		margin-left: 8em;
+		}
+		
+	ul.square li {
+		padding: 5px;
+		}
+		
+	ul.none {
+		list-style-type: none;
+		}
+		
+	a:hover, a:active {
+		color: #333;
+		background-color: #ffc;
+		font-weight: normal;
+		}
+		
+	a:link, a:visited {
+		color: #820204;
+		background-color: #fff;			
+		font-weight: normal;
+		}
+					
+			
+	p.border {
+		color: #333;
+		background-color: #efefef;
+		margin: 0 4em 0 4em;
+		padding: 10px;
+		border: 1px solid silver;
+		font-weight: bold;
+		}
+		
+	p.indentboth {
+		margin-left: 4em;
+		margin-right: 4em;
+		}
+				
+	.center {
+		text-align: center;
+		}
+						
+	.small-font {
+		font-size: .75em;
+		text-align: left;
+		margin: 20px 0;
+		padding: 0px 20px;
+		}
+				
+	.highlight {
+		color: #333;
+		background-color: #ffc;
+		}
+				
+	.home {
+		font-size: 75%;
+		text-align: left;
+		margin-left: 20px;
+		margin-top: 10px;
+		}
+							
+	abbr, acronym, dfn {
+		font-style: normal;
+		border-bottom: 1px dotted gray;
+		}
+			
+	abbr {
+		speak: spell-out;
+		}
+			
+	acronym {
+		speak: normal;
+		}
+			
+	#validation {
+		text-align: center;
+		color: #fff;
+		background-color: #fff;
+		margin-bottom: 1em;
+		}						
+
+	#validation img {
+		border: 0;
+		}
+			
+	#validation a:link, 
+	#validation a:visited, 
+	#validation a:hover, 
+	#validation a:active 
+	{
+		text-decoration: none;
+		border: 1px dotted #fff;
+		}
+				
+				
+	.pagination {
+		padding: 2px;
+		margin-left: 8%;
+		margin-bottom: 20px;
+		}
+
+	.pagination ul {
+		margin: 0;
+		padding: 0;
+		text-align: left; /*Set to "right" to right align pagination interface*/
+		font-size: 16px;
+		}
+
+	.pagination li {
+		list-style-type: none;
+		display: inline;
+		padding-bottom: 1px;
+		}
+
+	.pagination a, .pagination a:visited {
+		padding: 0 5px;
+		border: 1px solid #820204;
+		text-decoration: none; 
+		color: #333;
+		}
+
+	.pagination a:hover, .pagination a:active {
+		border: 1px solid #820204;
+		color: #000;
+		background-color: #ffc;
+		}
+
+	.pagination li.currentpage {
+		font-weight: bold;
+		padding: 0 5px;
+		border: 1px solid #900;
+		background-color: #820204;
+		color: #fff;
+		}
+
+	.pagination li.disablepage {
+		padding: 0 5px;
+		border: 1px solid #929292;
+		color: #929292;
+		}
+
+	.pagination li.nextpage {
+		font-weight: bold;
+		}
+
+	* html .pagination li.currentpage, * html .pagination li.disablepage { /* IE 6 and below. Adjust non linked LIs slightly to account for bugs */
+		margin-right: 5px;
+		padding-right: 0;
+		}
+
+			
+/* End of screen style sheet */
+							
